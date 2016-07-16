@@ -9,7 +9,6 @@
 
         data.forEach(function (sign) {
             sign.id = sign.word.toLowerCase().match(/\w+/g).join('-');
-            console.log(sign.id);
         });
 
         $('body').append(template(data));

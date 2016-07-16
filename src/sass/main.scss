@@ -1,3 +1,5 @@
-body {
-	background-color: goldenrod;
+@media (min-width: 768px) {
+	.collapse {
+		display: block;
+	}
 }
