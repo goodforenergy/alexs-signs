@@ -105,7 +105,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
-xcopy "%DEPLOYMENT_TARGET%\build\" "%DEPLOYMENT_TARGET%\" /s
+xcopy "%DEPLOYMENT_TARGET%\build" "%DEPLOYMENT_TARGET%\" /s
 rd "%DEPLOYMENT_TARGET%\src" /s /q
 rd "%DEPLOYMENT_TARGET%\build" /s /q
 
