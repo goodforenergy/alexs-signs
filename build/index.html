@@ -24,7 +24,11 @@
             </a>
             <div class="collapse" id="{{id}}">
               <div class="well">
-                {{alex}}
+                <div>Makaton: {{makaton}}</div>
+                <div>Alex: {{alex}}</div>
+                {{#if notes}}
+                    <div>Notes: {{notes}}</div>
+                {{/if}}
               </div>
             </div>
         </li>
