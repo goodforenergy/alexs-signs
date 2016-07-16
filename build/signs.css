@@ -1,3 +1,9 @@
+.sgn-highlight {
+  font-weight: bold; }
+
 @media (min-width: 768px) {
-  .collapse {
-    display: block; } }
+  .sgn-collapsable {
+    display: block; }
+  .sgn-word {
+    pointer-events: none;
+    cursor: default; } }

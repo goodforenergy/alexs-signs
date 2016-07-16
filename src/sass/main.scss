@@ -1,5 +1,15 @@
+.sgn-highlight {
+	font-weight: bold;
+}
+
+// Show all information if there's room
 @media (min-width: 768px) {
-	.collapse {
+	.sgn-collapsable {
 		display: block;
+	}
+
+	.sgn-word {
+		pointer-events: none;
+		cursor: default;
 	}
 }
