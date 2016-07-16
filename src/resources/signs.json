@@ -252,9 +252,15 @@
         "notes": "Often used when talking about lettuce, baby spinach, etc. Could be confused with Cat or Slow."
     },
     {
+        "word": "Hand",
+        "makaton": "Point to left hand with right index finger.",
+        "alex": "n/a",
+        "notes": "Says “haan”."
+    },
+    {
         "word": "Happy",
         "makaton": "Clap heels of open hands together twice, while moving in small outward circles (like an excited happy toddler).",
-        "alex": "Same as To Clap.",
+        "alex": "Same as “To Clap”.",
         "notes": ""
     },
     {
