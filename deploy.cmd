@@ -105,9 +105,9 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   popd
 )
 
-del /s "%DEPLOYMENT_TARGET%\src" /q
-move "%DEPLOYMENT_TARGET%\build\*.*" "%DEPLOYMENT_TARGET%\"
-rd "%DEPLOYMENT_TARGET%\build"
+xcopy "%DEPLOYMENT_TARGET%\build\" "%DEPLOYMENT_TARGET%\" /s
+rd "%DEPLOYMENT_TARGET%\src" /s /q
+rd "%DEPLOYMENT_TARGET%\build" /s /q
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
