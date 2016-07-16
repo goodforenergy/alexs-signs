@@ -106,7 +106,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 )
 
 del /s "%DEPLOYMENT_TARGET%\src" /q
-move /s "%DEPLOYMENT_TARGET%\build\*.*" "%DEPLOYMENT_TARGET%\"
+move "%DEPLOYMENT_TARGET%\build\*.*" "%DEPLOYMENT_TARGET%\"
 rd "%DEPLOYMENT_TARGET%\build"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
