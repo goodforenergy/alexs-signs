@@ -66,6 +66,18 @@
         "notes": "Says “B..k”"
     },
     {
+        "word": "Boy",
+        "makaton": "Extend right index finger. Rub side of finger forwards and backwards across the chin, twice.",
+        "alex": "Similar to Makaton but reversed. Finger is often only moved across chin once.",
+        "notes": ""
+    },
+    {
+        "word": "Bright",
+        "makaton": "",
+        "alex": "Places left forearm over eyes",
+        "notes": ""
+    },
+    {
         "word": "Brown",
         "makaton": "Place right fingertips in front of chin, thumb under chin. Stroke chin, while moving formation forward, closing fingertips on to thumb, twice.",
         "alex": "Similar to Makaton version but reversed with fingers stroking sides of chin.",
@@ -156,6 +168,12 @@
         "notes": "Says “Dada”. Also says this for Man."
     },
     {
+        "word": "Different",
+        "makaton": "Extend index fingers, palms down. Place sides of fingers together. Move apart, turning to palms up.",
+        "alex": "Similar to Makaton version but performed only using left hand.",
+        "notes": ""
+    },
+    {
         "word": "Digger (to dig)",
         "makaton": "Form fists with both hands. Place left fist, palm up in front of right fist, palm back. Move formation up towards left shoulder (as though digging).",
         "alex": "Forms fist with left hand, tucked in towards arm. Moves across body in clockwise circles.",
@@ -177,7 +195,7 @@
         "word": "End",
         "makaton": "Unknown",
         "alex": "Forms fists with both hands, palms facing. Taps fists together.",
-        "notes": "Same as Cymbals."
+        "notes": "Same as Cymbals, may also mean Bang."
     },
     {
         "word": "Excavator",
@@ -227,7 +245,6 @@
         "alex": "Same as To Wash/Swimming Pool",
         "notes": ""
     },
-
     {
         "word": "Green",
         "makaton": "Place right blade on wrist of left arm. Sweep right hand to upper arm.",
@@ -244,7 +261,7 @@
         "word": "Hat",
         "makaton": "Unknown",
         "alex": "Pats head with open left hand",
-        "notes": "Often used to refer to parties (because of party hats), Clowns (again because of the hat) or wanting you say “Woo Hoo”."
+        "notes": "Often used to refer to parties (because of party hats), Clowns (again because of the hat), Hard Hat, or wanting you say “Woo Hoo”."
     },
     {
         "word": "Helicopter",
@@ -263,6 +280,30 @@
         "makaton": "n/a",
         "alex": "Same as Train",
         "notes": ""
+    },
+    {
+        "word": "Honeybear",
+        "makaton": "n/a",
+        "alex": "signs To Sleep followed by Bear",
+        "notes": "Alex's cuddly, also “finding honeybear” is a synonym for going to bed"
+    },
+    {
+        "word": "Hot",
+        "makaton": "Place right fingertips on chin. Turn hand quickly to palm down while moving hand forward, stopping with stress.",
+        "alex": "Similar to Makaton but reversed with left hand placed in front of face.",
+        "notes": ""
+    },
+    {
+        "word": "Hungry",
+        "makaton": "Place open right hand on stomach. Move in anti-clockwise circle.",
+        "alex": "Same as Makaton but reversed.",
+        "notes": "Looks similar to “Yummy”."
+    },
+    {
+        "word": "I",
+        "makaton": "Extend right index finger. Point to self.",
+        "alex": "Same as Makaton but reversed",
+        "notes": "Also means Me"
     },
     {
         "word": "Knife",
@@ -301,6 +342,12 @@
         "notes": "Similar to Alex’s version of Clap, Happy, and Sunday."
     },
     {
+        "word": "Me",
+        "makaton": "Same as I",
+        "alex": "Same as I",
+        "notes": ""
+    },
+    {
         "word": "Milk",
         "makaton": "Form right fist. Open and close fist, moving down slightly, twice.",
         "alex": "Opens and closes left fist.",
@@ -331,10 +378,22 @@
         "notes": ""
     },
     {
+        "word": "Muffin",
+        "makaton": "Same as Cake",
+        "alex": "Same as Cake",
+        "notes": ""
+    },
+    {
         "word": "Mum",
         "makaton": "Fingerspell “M” quickly, twice.",
         "alex": "n/a",
         "notes": "Says “Mum”. Also says this for Woman."
+    },
+    {
+        "word": "Name",
+        "makaton": "Extend right index and middle fingers. Place on right temple. Move formation forward, turning palm up and forward.",
+        "alex": "Similar to Makaton version but reversed, doesn't always start from temple.",
+        "notes": ""
     },
     {
         "word": "Nana",
@@ -347,6 +406,12 @@
         "makaton": "Unknown",
         "alex": "Taps left index finger on left side of head, in front of ear, twice.",
         "notes": "Also used to mean “What sound does it make?” and “I don’t feel good”."
+    },
+    {
+        "word": "Off",
+        "makaton": "Unknown",
+        "alex": "n/a",
+        "notes": "Says “Offff”"
     },
     {
         "word": "One",
@@ -364,6 +429,12 @@
         "word": "Penguin",
         "makaton": "Both arms straight, next to torso, with fingers straight, palms as right angles to body (fingers pointing left and right). Wiggle side to side (like a penguin waddling).",
         "alex": "Wiggles body from side to side from hips (like a penguin waddling).",
+        "notes": ""
+    },
+    {
+        "word": "Phew",
+        "makaton": "Unknown",
+        "alex": "Wipes back of left hand across eyebrows.",
         "notes": ""
     },
     {
@@ -391,6 +462,12 @@
         "notes": ""
     },
     {
+        "word": "Raisins",
+        "makaton": "Place left hand, bent at third knuckle, thumb under, palm back, at chest height. Place right index finger onto ball of right thumb. Move right hand formation in and out of top of left hand formation, twice.",
+        "alex": "Similar to Makaton version but reversed, sometimes left finger and thumb taps top of right hand instead of going into the formation.",
+        "notes": ""
+    },
+    {
         "word": "Red",
         "makaton": "Extend right index finger. Place on chin. Move in a small clockwise circle.",
         "alex": "Wipes left fingers down chin",
@@ -406,6 +483,12 @@
         "word": "Sad",
         "makaton": "Place side of index finger of open right hand on chin. Move down chin.",
         "alex": "Similar to Makaton version but reversed. Hand is place out from face, not against chin.",
+        "notes": ""
+    },
+    {
+        "word": "Sand",
+        "makaton": "Move ball of right thumb across the right hand fingertips, several times.",
+        "alex": "Similar to Makaton version but reversed with thumb moving up and down fingertips.",
         "notes": ""
     },
     {
@@ -445,6 +528,18 @@
         "notes": "Similar to Alex’s version of Clap, Happy, and Little."
     },
     {
+        "word": "Thirsty",
+        "makaton": "Place right handed “C” on throat under chin. Move down slightly forming a fist.",
+        "alex": "Same as Makaton version but reversed.",
+        "notes": ""
+    },
+    {
+        "word": "Thomas the Tank Engine",
+        "makaton": "n/a",
+        "alex": "Signs “1”",
+        "notes": ""
+    },
+    {
         "word": "Time",
         "makaton": "Extend right index finger. Point to back of left wrist.",
         "alex": "Same as Makaton version but reversed.",
@@ -455,6 +550,12 @@
         "makaton": "Unknown",
         "alex": "Covers open mouth with left hand (like covering a yawn).",
         "notes": "Often used if Alex notices someone yawning."
+    },
+    {
+        "word": "Tomato",
+        "makaton": "Place cupped right hand, palm forward, at right side of face. Move formation to palm back, over nose.",
+        "alex": "Similar to Makaton but reversed, not always over nose.",
+        "notes": "Looks the same as “To drink”."
     },
     {
         "word": "To brush teeth",
@@ -479,6 +580,12 @@
         "makaton": "Place right index fingertip onto ball of right thumb. Move formation from left to right in front of chest, as if writing.",
         "alex": "Same as Makaton version but reversed.",
         "notes": "Also used to mean Colouring."
+    },
+    {
+        "word": "To drink",
+        "makaton": "Form right handed “C”, palm left, blade down. Tilt up and forward as if drinking.",
+        "alex": "Similar to Makaton version but reversed, with hand rotated away from and toward body.",
+        "notes": "Looks the same as Tomato."
     },
     {
         "word": "To eat (food)",
@@ -523,6 +630,12 @@
         "notes": ""
     },
     {
+        "word": "To want",
+        "makaton": "Move heel of open right hand down chest, turning palm down.",
+        "alex": "Similar to Makaton version but reversed, sometimes hand wipes down throat instead of chest.",
+        "notes": "Often used with other signs when Alex is asking for something nicely, e.g. “I want banana please”."
+    },
+    {
         "word": "To wash (bathe)",
         "makaton": "Mime washing appropriate part of the body.",
         "alex": "Open left hand palm down, moves up and down (as though splashing).",
@@ -562,7 +675,7 @@
         "word": "Up",
         "makaton": "Hold open right hand, palm up. Move upwards.",
         "alex": "Same as Makaton version but reversed.",
-        "notes": ""
+        "notes": "Will sometimes says “aahpp” instead."
     },
     {
         "word": "Want",
@@ -577,16 +690,46 @@
         "notes": ""
     },
     {
+        "word": "White",
+        "makaton": "Place right index finger onto ball of right thumb, other fingers extended and slightly spread. Place formation on right side of neck and rock, twice.",
+        "alex": "Similar to Makaton but reversed with left hand placed on right side of neck.",
+        "notes": "Often signs “yellow” instead, though he does understand the difference between white and yellow."
+    },
+    {
+        "word": "Work",
+        "makaton": "Open both hands, blades down. Tap blade of open right hand on index finger of left hand, twice.",
+        "alex": "Similar to Makaton version but reversed. Right hand is often palm down instead of blade down.",
+        "notes": ""
+    },
+    {
         "word": "X",
         "makaton": "Cross index fingers to form “x”.",
         "alex": "Same as Makaton version.",
-        "notes": ""
+        "notes": "Will sign “x” when he sees a word with an “x” in it."
     },
     {
         "word": "Yellow",
         "makaton": "Place right index finger onto ball of right thumb, other fingers extended and slightly spread. Place formation on right temple and rock, twice.",
         "alex": "Similar to Makaton version but reversed and index finger and thumb hold onto top of left ear.",
         "notes": ""
+    },
+    {
+        "word": "You",
+        "makaton": "Extend right index finger. Point forward to toward person concerned. Use directionality.",
+        "alex": "Same as Makaton version but reversed.",
+        "notes": ""
+    },
+    {
+        "word": "Yours",
+        "makaton": "Form right fist, palm forward. Move formation forward. Use directionality.",
+        "alex": "Same as Makaton version but reversed.",
+        "notes": ""
+    },
+    {
+        "word": "Yummy",
+        "makaton": "Place open right hand on stomach. Move in anti-clockwise circles, multiple times.",
+        "alex": "Similar to Makaton version but reversed.",
+        "notes": "Appears similar to “Hungry”."
     },
     {
         "word": "Zero",
