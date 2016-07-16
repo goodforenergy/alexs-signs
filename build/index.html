@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <title></title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+            window.location = http://outdatedbrowser.com/en;
+        <![endif]-->
+    </head>
+    <body>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js" type="text/javascript" charset="utf-8"></script>
+    <script id="signs-template" type="text/x-handlebars-template">
+        <ol>
+        {{#each this}}
+        <li>
+            <a class="role="button" data-toggle="collapse" href="#{{id}}" aria-expanded="false" aria-controls="collapseExample">
+              {{word}}
+            </a>
+            <div class="collapse" id="{{id}}">
+              <div class="well">
+                {{alex}}
+              </div>
+            </div>
+        </li>
+        {{/each}}
+        </ol>
+    </script>
+    <script src="signs.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
