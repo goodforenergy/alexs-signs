@@ -3,6 +3,10 @@
 (function () {
     'use strict';
 
+    Handlebars.registerHelper('toLowerCase', function (str) {
+        return str.toLowerCase();
+    });
+
     var template = Handlebars.compile($('#signs-template').html());
 
     $.getJSON('signs.json', function (data) {

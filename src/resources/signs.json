@@ -9,7 +9,8 @@
         "word": "Aunty Helen",
         "makaton": "n/a",
         "alex": "Same as Bird",
-        "notes": ""
+        "notes": "",
+        "see": ["Bird"]
     },
     {
         "word": "Banana",

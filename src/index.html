@@ -24,16 +24,24 @@
         <h3>{{@key}}</h3>
             {{#each this}}
             <div>
-                <a class="sgn-word" role="button" data-toggle="collapse" href="#{{id}}" aria-expanded="false" aria-controls="collapseExample">
+                <a class="sgn-word" role="button" data-toggle="collapse" id="{{id}}" href="#{{id}}_collapsible" aria-expanded="false" aria-controls="collapseExample">
                   {{word}}
                 </a>
-                <div class="sgn-collapsable collapse" id="{{id}}">
+                <div class="sgn-collapsable collapse" id="{{id}}_collapsible">
                   <div class="well">
                     <div><span class="sgn-highlight">Makaton:</span> {{makaton}}</div>
                     <div><span class="sgn-highlight">Alex:</span> {{alex}}</div>
                     {{#if notes}}
                         <div><span class="sgn-highlight">Notes:</span> {{notes}}</div>
                     {{/if}}
+                    {{#if see}}
+                        <div><span class="sgn-highlight">See also:</span> 
+                        {{#each see}}
+                            <a href="#{{toLowerCase this}}">{{this}}</a>
+                        {{/each}}
+                        </div>
+                    {{/if}}
+
                   </div>
                 </div>
             </div>
