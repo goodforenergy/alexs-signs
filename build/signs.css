@@ -6,4 +6,6 @@
     display: block; }
   .sgn-word {
     pointer-events: none;
-    cursor: default; } }
+    cursor: default; }
+  body {
+    font-size: 1.5em; } }
