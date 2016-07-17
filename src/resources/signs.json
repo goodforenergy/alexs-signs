@@ -1,5 +1,18 @@
 [
     {
+        "word": "Ahh",
+        "notes": "Alex says “Aahh”. May mean “Alex”, “To brush teeth”, or “Mouth”.",
+        "see": ["Alex","To brush teeth","Mouth"]
+    },
+    {
+        "word": "Alex",
+        "see": ["Ahh"]
+    },
+    {
+        "word": "Alligator",
+        "see": ["Crocodile"]
+    },
+    {
         "word": "Arm",
         "makaton": "Point to arm.",
         "alex": "n/a",
@@ -7,22 +20,40 @@
     },
     {
         "word": "Aunty Helen",
-        "makaton": "n/a",
+        "makaton": "n/ar",
         "alex": "Same as Bird",
         "notes": "",
         "see": ["Bird"]
     },
     {
+        "word": "Baby Spinach",
+        "see": ["Green"]
+    },
+    {
         "word": "Banana",
         "makaton": "Extend left index finger. Place right index finger onto ball of right thumb. Move right formation in downward “peeling” movements from tip of left index finger, twice.",
         "alex": "Same as Monkey.",
-        "notes": ""
+        "notes": "",
+        "see": ["Monkey"]
+    },
+    {
+        "word": "Bang",
+        "see": ["Cymbals"]
     },
     {
         "word": "Bear",
         "makaton": "Form “C” with index fingers and thumbs of both hands. Place fingertips on head with thumbs on temples to represent the ears of a teddy bear.",
-        "alex": "Loose fist formed with left hand and tapped against top left side of head, twice. ",
-        "notes": "Also used to mean Koala and Panda. Often used to refer to Bear Hunt (as in I want to go outside with you Nana). May also refer to Nana."
+        "alex": "Loose fist formed with left hand and tapped against top left side of head, twice.",
+        "notes": "Also used to mean Koala and Panda. Often used to refer to Bear Hunt (as in I want to go outside with you Nana). May also refer to Nana. May appear similar to “To shower”.",
+        "see": ["To shower"]
+    },
+    {
+        "word": "Bed",
+        "see": ["To sleep"]
+    },
+    {
+        "word": "Bicycle",
+        "see": ["Motorcycle"]
     },
     {
         "word": "Big",
@@ -39,14 +70,15 @@
     {
         "word": "Black",
         "makaton": "Form right fist. Place formation, palm left, on right check. Move forward and down.",
-        "alex": "Same as Makaton version but reversed.",
+        "alex": "Same as Makaton version but reversed. Doesn't always move fist.",
         "notes": ""
     },
     {
         "word": "Blow Kiss",
         "makaton": "n/a",
         "alex": "Palm of open left hand placed on mouth and moved away from body.",
-        "notes": ""
+        "notes": "May appear the same as Please",
+        "see": ["Please"]
     },
     {
         "word": "Blue",
@@ -87,8 +119,8 @@
     {
         "word": "Bus",
         "makaton": "Form fists with both hands, palms up. Move formation as if driving a bus.",
-        "alex": "Move closed left fist across body and back (a bit like driving a bus one handed).",
-        "notes": "May appear similar to Digger."
+        "alex": "Move closed left fist across body in a clockwise circle, twice.",
+        "notes": ""
     },
     {
         "word": "Cake",
@@ -106,7 +138,8 @@
         "word": "Cat",
         "makaton": "Stroke back of open left hand with fingers of open right hand, palm down, twice.",
         "alex": "Similar to Makaton version but reversed. May appear similar to Green.",
-        "notes": ""
+        "notes": "",
+        "see": ["Green"]
     },
     {
         "word": "Cheese",
@@ -115,10 +148,19 @@
         "notes": "Often used when talking about Zoe or September (Zoe’s birthday)."
     },
     {
+        "word": "Cheetah",
+        "see": ["Lion"]
+    },
+    {
+        "word": "Clown",
+        "see": ["Hat"]
+    },
+    {
         "word": "Coffee",
         "makaton": "Form fists with both hands. Move right fist in small anti-clockwise circles above left fist.",
         "alex": "Similar to Makaton but reversed.",
-        "notes": ""
+        "notes": "May appear similar to To Make",
+        "see": ["To make"]
     },
     {
         "word": "Cold",
@@ -127,13 +169,17 @@
         "notes": ""
     },
     {
+        "word": "Colouring",
+        "see": ["To draw"]
+    },
+    {
         "word": "Communication",
         "makaton": "Form “C” with both hands. Place right thumb between left thumb and fingers. Move formation backwards and forwards alternately, twice.",
         "alex": "Same as Makaton, but reversed and right hand doesn’t move.",
         "notes": ""
     },
     {
-        "word": "Concrete mixer",
+        "word": "Concrete Mixer",
         "makaton": "Extend right index finger, blade down. Move finger down in anti-clockwise circle, twice.",
         "alex": "Similar to Makaton, but reversed and circles are a bit irregular.",
         "notes": ""
@@ -146,21 +192,22 @@
     },
     {
         "word": "Crane (construction)",
-        "makaton": "Unknown",
+        "makaton": "",
         "alex": "Lifts both arms above head at 15 degree angle from vertical. Sometimes only left arm is used.",
         "notes": ""
     },
     {
-        "word": "Crocodile (Alligator)",
+        "word": "Crocodile",
         "makaton": "The right arm is extended above the head, the left arm forward from the body, with the palms of the hands facing each other and the fingers hooked. The right arm is brought down so that the hands meet, the right hand fingers covering the left, twice.",
         "alex": "Similar to the Makaton version, except reversed and the right hand isn’t always used, and Alex only moves his hands once.",
-        "notes": ""
+        "notes": "",
+        "see": ["Alligator"]
     },
     {
         "word": "Cymbals",
-        "makaton": "Unknown",
+        "makaton": "",
         "alex": "Pretends to hold cymbals and bang them.",
-        "notes": ""
+        "notes": "May also be used to mean Bang"
     },
     {
         "word": "Dad",
@@ -194,21 +241,28 @@
     },
     {
         "word": "End",
-        "makaton": "Unknown",
+        "makaton": "",
         "alex": "Forms fists with both hands, palms facing. Taps fists together.",
-        "notes": "Same as Cymbals, may also mean Bang."
+        "notes": "Same as Cymbals, may also mean Bang.",
+        "see": ["Cymbals"]
     },
     {
         "word": "Excavator",
         "makaton": "Unknown",
         "alex": "Fingerspells “x” followed by Digger.",
-        "notes": ""
+        "notes": "",
+        "see": ["Digger (to dig)", "X"]
+    },
+    {
+        "word": "Fig",
+        "see": ["Pig"]
     },
     {
         "word": "Five",
         "makaton": "Right hand up, palm out, in front of body, with fingers slightly spread.",
         "alex": "Same as Makaton version but reversed.",
-        "notes": "May appear similar to Stop."
+        "notes": "May appear similar to Stop.",
+        "see": ["Stop"]
     },
     {
         "word": "Fix it",
@@ -223,34 +277,42 @@
         "notes": ""
     },
     {
+        "word": "Food",
+        "see": ["To eat"]
+    },
+    {
+        "word": "Fork",
+        "makaton": "Extend right index, middle and ring fingers. Jab into palm of open left hand, twice.",
+        "alex": "Same as Makaton version but reversed."
+    },
+    {
         "word": "Goodbye",
         "makaton": "Use natural gesture.",
         "alex": "Same as Hello",
-        "notes": ""
+        "notes": "",
+        "see": ["Hello"]
     },
     {
         "word": "Granddad Geoff",
-        "makaton": "n/a",
-        "alex": "Same as Dog",
-        "notes": ""
+        "see": ["Dog"]
     },
     {
         "word": "Granddad Kerry",
-        "makaton": "n/a",
-        "alex": "Same as Digger",
-        "notes": ""
+        "see": ["Digger (to dig)"]
     },
     {
         "word": "Granny (Carolyn)",
         "makaton": "n/a",
         "alex": "Same as To Wash/Swimming Pool",
-        "notes": ""
+        "notes": "",
+        "see": ["To wash (bathe)"]
     },
     {
         "word": "Green",
         "makaton": "Place right blade on wrist of left arm. Sweep right hand to upper arm.",
         "alex": "Usually same as Makaton version but reversed. Sometimes Alex will wipe a different part of the arm (e.g. elbow to shoulder, or back of wrist).",
-        "notes": "Often used when talking about lettuce, baby spinach, etc. Could be confused with Cat or Slow."
+        "notes": "Often used when talking about lettuce, baby spinach, etc. Could be confused with Cat or Slow.",
+        "see": ["Cat", "Slow"]
     },
     {
         "word": "Hand",
@@ -261,8 +323,17 @@
     {
         "word": "Happy",
         "makaton": "Clap heels of open hands together twice, while moving in small outward circles (like an excited happy toddler).",
-        "alex": "Same as “To Clap”.",
-        "notes": ""
+        "alex": "Same as “To clap”.",
+        "notes": "",
+        "see": ["To clap"]
+    },
+    {
+        "word": "Hardware Store",
+        "see": ["Lawnmower"]
+    },
+    {
+        "word": "Hard Hat",
+        "see": ["Hat"]
     },
     {
         "word": "Hat",
@@ -286,13 +357,15 @@
         "word": "Henry",
         "makaton": "n/a",
         "alex": "Same as Train",
-        "notes": ""
+        "notes": "",
+        "see": ["Train"]
     },
     {
         "word": "Honeybear",
         "makaton": "n/a",
         "alex": "signs To Sleep followed by Bear",
-        "notes": "Alex's cuddly, also “finding honeybear” is a synonym for going to bed"
+        "notes": "Alex's cuddly, also “finding honeybear” is a synonym for going to bed",
+        "see": ["Bear","To sleep"]
     },
     {
         "word": "Hot",
@@ -304,13 +377,23 @@
         "word": "Hungry",
         "makaton": "Place open right hand on stomach. Move in anti-clockwise circle.",
         "alex": "Same as Makaton but reversed.",
-        "notes": "Looks similar to “Yummy”."
+        "notes": "Looks similar to “Yummy”.",
+        "see": ["Yummy"]
     },
     {
         "word": "I",
         "makaton": "Extend right index finger. Point to self.",
         "alex": "Same as Makaton but reversed",
-        "notes": "Also means Me"
+        "notes": "Also means Me",
+        "see": ["Me"]
+    },
+    {
+        "word": "January",
+        "see": ["Bird"]
+    },
+    {
+        "word": "Koala",
+        "see": ["Bear"]
     },
     {
         "word": "Knife",
@@ -322,19 +405,25 @@
         "word": "Last",
         "makaton": "Open right hand, palm down. Move formation down from wrist.",
         "alex": "Similar to Makaton version, but reversed and may be repeated.",
-        "notes": "Appears very similar to To Wash or Granny."
+        "notes": "Appears very similar to To Wash or Granny.",
+        "see": ["To wash"]
     },
     {
         "word": "Lawnmower",
         "makaton": "Unknown",
         "alex": "Forms fist with left hand, palm down, with arm angled out a little from body. Moves arm out from body and back, twice.",
-        "notes": "Often used when talking about gardening equipment (e.g. Weed wackers, leaf blowers), or the Hardware store."
+        "notes": "Often used when talking about gardening equipment (e.g. Weed wackers, leaf blowers), or the Hardware Store."
+    },
+    {
+        "word": "Lettuce",
+        "see": ["Green"]
     },
     {
         "word": "Light",
         "makaton": "Place right fingernails on ball of tight thumb. Place formation at eye level at right side of face, palm down. Flick hand open.",
         "alex": "Same as Milk",
-        "notes": ""
+        "notes": "",
+        "see": ["Milk"]
     },
     {
         "word": "Lion",
@@ -346,25 +435,34 @@
         "word": "Little",
         "makaton": "Open both hands, palms facing. Move hands towards each other.",
         "alex": "Mostly same as Makaton version but reversed. Sometimes hands meet. ",
-        "notes": "Similar to Alex’s version of Clap, Happy, and Sunday."
+        "notes": "Similar to Alex’s version of Clap, Happy, and Sunday.",
+        "see": ["To clap","Happy","Sunday"]
+    },
+    {
+        "word": "Man",
+        "see": ["Dad"]
+    },
+    {
+        "word": "March",
+        "see": ["Train"]
     },
     {
         "word": "Me",
-        "makaton": "Same as I",
-        "alex": "Same as I",
-        "notes": ""
+        "see": ["I"]
     },
     {
         "word": "Milk",
         "makaton": "Form right fist. Open and close fist, moving down slightly, twice.",
         "alex": "Opens and closes left fist.",
-        "notes": "Often used when talking about cold things (as in cold like milk from the supermarket). Alex uses the same sign to mean Orange, Light, and Star (though these should be different)."
+        "notes": "Often used when talking about cold things (as in cold like milk from the supermarket). Alex uses the same sign to mean Orange, Light, and Star (though these should be different).",
+        "see": ["Orange","Light","Star"]
     },
     {
         "word": "Monkey",
         "makaton": "The right hand is held above the right side of the waist, palm up, blade down, the fingers flexed onto the thumb with the backs of the fingertips touching the body, and is moved up and round towards the armpit.",
         "alex": "Same as Makaton version but reversed.",
-        "notes": "Also used to mean Banana"
+        "notes": "Also used to mean Banana",
+        "see": ["Banana"]
     },
     {
         "word": "More",
@@ -381,14 +479,17 @@
     {
         "word": "Mouse",
         "makaton": "Form fist with right hand, index finger extended, palm facing chest. Bounce formation along left forearm towards elbow.",
-        "alex": "Similar to Makaton version but reversed. Sometimes use sign for Cheese.",
-        "notes": ""
+        "alex": "Similar to Makaton version but reversed. Sometimes uses sign for Cheese.",
+        "notes": "",
+        "see": ["Cheese"]
+    },
+    {
+        "word": "Mouth",
+        "see": ["Ahh"]
     },
     {
         "word": "Muffin",
-        "makaton": "Same as Cake",
-        "alex": "Same as Cake",
-        "notes": ""
+        "see": ["Cake"]
     },
     {
         "word": "Mum",
@@ -404,20 +505,24 @@
     },
     {
         "word": "Nana",
-        "makaton": "n/a",
-        "alex": "n/a",
+        "makaton": "",
+        "alex": "",
         "notes": "Says “Nana”. Also used to refer to any smiley faces."
     },
     {
         "word": "Noisy",
-        "makaton": "Unknown",
+        "makaton": "",
         "alex": "Taps left index finger on left side of head, in front of ear, twice.",
         "notes": "Also used to mean “What sound does it make?” and “I don’t feel good”."
     },
     {
+        "word": "Oats",
+        "see": ["Pig"]
+    },
+    {
         "word": "Off",
-        "makaton": "Unknown",
-        "alex": "n/a",
+        "makaton": "",
+        "alex": "",
         "notes": "Says “Offff”"
     },
     {
@@ -430,7 +535,20 @@
         "word": "Orange",
         "makaton": "Place relaxed right fist, palm forward, at right corner of mouth. Clench twice.",
         "alex": "Same as Milk",
-        "notes": ""
+        "notes": "",
+        "see": ["Milk"]
+    },
+    {
+        "word": "Panda",
+        "see": ["Bear"]
+    },
+    {
+        "word": "Party",
+        "see": ["Hat"]
+    },
+    {
+        "word": "Peg",
+        "see": ["Pig"]
     },
     {
         "word": "Penguin",
@@ -440,9 +558,13 @@
     },
     {
         "word": "Phew",
-        "makaton": "Unknown",
+        "makaton": "",
         "alex": "Wipes back of left hand across eyebrows.",
         "notes": ""
+    },
+    {
+        "word": "Phone",
+        "see": ["Digger (to dig)"]
     },
     {
         "word": "Pig",
@@ -451,16 +573,21 @@
         "notes": "Sometimes used to mean Fig, Oats and Pegs."
     },
     {
-        "word": "Please (thank you)",
+        "word": "Please",
         "makaton": "Move fingertips of open right hand forward from chin. Use both hands for stress. Use directionality.",
         "alex": "Similar to Makaton version but reversed. Sometimes starts out as Blow Kiss.",
-        "notes": ""
+        "notes": "May also mean Thank You",
+        "see": ["Blow Kiss"]
     },
     {
         "word": "Police Officer",
         "makaton": "Extend right index and middle fingers. Trace tips of fingers across back of left wrist.",
         "alex": "Similar to Makaton version but reversed using only index finger.",
         "notes": ""
+    },
+    {
+        "word": "Quadbike",
+        "see": ["Motorcycle"]
     },
     {
         "word": "Quiet",
@@ -472,7 +599,8 @@
         "word": "Raisins",
         "makaton": "Place left hand, bent at third knuckle, thumb under, palm back, at chest height. Place right index finger onto ball of right thumb. Move right hand formation in and out of top of left hand formation, twice.",
         "alex": "Similar to Makaton version but reversed, sometimes left finger and thumb taps top of right hand instead of going into the formation.",
-        "notes": ""
+        "notes": "May also appear similar to Cake/Muffin",
+        "see": ["Cake"]
     },
     {
         "word": "Red",
@@ -487,6 +615,10 @@
         "notes": "Sometimes means rubbish truck, though Alex will sign both Rubbish and Truck if encouraged to do so. Often used when talking about Thursday (rubbish truck day), Uncle David, or February (Uncle David’s birthday). May also refer the Conch bath toy."
     },
     {
+        "word": "Rubbish Truck",
+        "see": ["Rubbish"]
+    },
+    {
         "word": "Sad",
         "makaton": "Place side of index finger of open right hand on chin. Move down chin.",
         "alex": "Similar to Makaton version but reversed. Hand is place out from face, not against chin.",
@@ -497,6 +629,14 @@
         "makaton": "Move ball of right thumb across the right hand fingertips, several times.",
         "alex": "Similar to Makaton version but reversed with thumb moving up and down fingertips.",
         "notes": ""
+    },
+    {
+        "word": "Scooter",
+        "see": ["Motorcycle"]
+    },
+    {
+        "word": "September",
+        "see": ["Cheese"]
     },
     {
         "word": "Seven",
@@ -514,25 +654,33 @@
         "word": "Slow",
         "makaton": "Extend right index finger, blade down. Place formation on left wrist. Move up to mid-forearm.",
         "alex": "Similar to Makaton version but reversed. Not always accurate about finger placement.",
-        "notes": "Could be confused with Green."
+        "notes": "Could be confused with Green.",
+        "see": ["Green"]
     },
     {
         "word": "Star",
         "makaton": "Place right fingernails onto ball of right thumb. Place formation slightly above right side of head, palm up/forward. Flick hand open, several times.",
         "alex": "Same as Milk.",
-        "notes": ""
+        "notes": "",
+        "see": ["Milk"]
     },
     {
         "word": "Stop",
         "makaton": "Move open right hand, palm forward, forward with stress.",
         "alex": "May use two hands, though usually just uses left hand. Forward action not very pronounced.",
-        "notes": "May appear similar to Five."
+        "notes": "May appear similar to Five.",
+        "see": ["Five"]
     },
     {
         "word": "Sunday",
         "makaton": "Tap open hands with fingers together, blades down, twice.",
         "alex": "Very similar to Little, hands slightly angled apart at wrists.",
-        "notes": "Similar to Alex’s version of Clap, Happy, and Little."
+        "notes": "Similar to Alex’s version of Clap, Happy, and Little.",
+        "see": ["Clap","Happy","Little"]
+    },
+    {
+        "word": "Thank you",
+        "see": ["Please"]
     },
     {
         "word": "Thirsty",
@@ -542,9 +690,11 @@
     },
     {
         "word": "Thomas the Tank Engine",
-        "makaton": "n/a",
-        "alex": "Signs “1”",
-        "notes": ""
+        "see": ["One"]
+    },
+    {
+        "word": "Tiger",
+        "see": ["Lion"]
     },
     {
         "word": "Time",
@@ -554,7 +704,7 @@
     },
     {
         "word": "Tired",
-        "makaton": "Unknown",
+        "makaton": "",
         "alex": "Covers open mouth with left hand (like covering a yawn).",
         "notes": "Often used if Alex notices someone yawning."
     },
@@ -562,7 +712,8 @@
         "word": "Tomato",
         "makaton": "Place cupped right hand, palm forward, at right side of face. Move formation to palm back, over nose.",
         "alex": "Similar to Makaton but reversed, not always over nose.",
-        "notes": "Looks the same as “To drink”."
+        "notes": "Looks the same as “To drink”.",
+        "see": ["To drink"]
     },
     {
         "word": "To brush teeth",
@@ -580,22 +731,25 @@
         "word": "To clap",
         "makaton": "Unknown",
         "alex": "Claps hands together.",
-        "notes": "Similar to Alex’s version of Happy, Little, and Sunday."
+        "notes": "Similar to Alex’s version of Happy, Little, and Sunday.",
+        "see": ["Happy","Little","Sunday"]
     },
     {
         "word": "To draw",
         "makaton": "Place right index fingertip onto ball of right thumb. Move formation from left to right in front of chest, as if writing.",
         "alex": "Same as Makaton version but reversed.",
-        "notes": "Also used to mean Colouring."
+        "notes": "Also used to mean Colouring.",
+        "see": ["Colouring"]
     },
     {
         "word": "To drink",
         "makaton": "Form right handed “C”, palm left, blade down. Tilt up and forward as if drinking.",
         "alex": "Similar to Makaton version but reversed, with hand rotated away from and toward body.",
-        "notes": "Looks the same as Tomato."
+        "notes": "Looks the same as Tomato.",
+        "see": ["Tomato"]
     },
     {
-        "word": "To eat (food)",
+        "word": "To eat",
         "makaton": "Place tips of right fingers onto ball of right thumb. Tap formation on chin, twice.",
         "alex": "Same as Makaton version but reversed.",
         "notes": "Also used to mean “I want food” or “Look, there is some food”. Doesn’t always mean that he wants food."
@@ -622,7 +776,8 @@
         "word": "To shower",
         "makaton": "Bounce slightly cupped right hand above head, twice.",
         "alex": "Similar to Makaton, but reversed and hand is to the side of the head, not above.",
-        "notes": ""
+        "notes": "May appear similar to Bear",
+        "see": ["Bear"]
     },
     {
         "word": "To sleep",
@@ -664,7 +819,12 @@
         "word": "Truck",
         "makaton": "Same as Bus",
         "alex": "Left handed fist moves downward from head to shoulder (as though pulling an air-horn)",
-        "notes": "Covers all sorts of trucks"
+        "notes": "Covers all sorts of trucks, though some trucks have a specific sign.",
+        "see": ["Concrete Mixer", "Rubbish Truck"]
+    },
+    {
+        "word": "TV",
+        "see": ["Digger (to dig)"]
     },
     {
         "word": "Two",
@@ -676,13 +836,18 @@
         "word": "Uncle David",
         "makaton": "n/a",
         "alex": "Same as Rubbish",
-        "notes": ""
+        "notes": "",
+        "see": ["Rubbish"]
     },
     {
         "word": "Up",
         "makaton": "Hold open right hand, palm up. Move upwards.",
         "alex": "Same as Makaton version but reversed.",
         "notes": "Will sometimes says “aahpp” instead."
+    },
+    {
+        "word": "Video",
+        "see": ["Digger (to dig)"]
     },
     {
         "word": "Want",
@@ -700,7 +865,12 @@
         "word": "White",
         "makaton": "Place right index finger onto ball of right thumb, other fingers extended and slightly spread. Place formation on right side of neck and rock, twice.",
         "alex": "Similar to Makaton but reversed with left hand placed on right side of neck.",
-        "notes": "Often signs “yellow” instead, though he does understand the difference between white and yellow."
+        "notes": "Often signs “yellow” instead, though he does understand the difference between white and yellow.",
+        "see": ["Yellow"]
+    },
+    {
+        "word": "Woman",
+        "see": ["Mum"]
     },
     {
         "word": "Work",
@@ -718,7 +888,8 @@
         "word": "Yellow",
         "makaton": "Place right index finger onto ball of right thumb, other fingers extended and slightly spread. Place formation on right temple and rock, twice.",
         "alex": "Similar to Makaton version but reversed and index finger and thumb hold onto top of left ear.",
-        "notes": ""
+        "notes": "May appear similar to White",
+        "see": ["White"]
     },
     {
         "word": "You",
@@ -736,7 +907,8 @@
         "word": "Yummy",
         "makaton": "Place open right hand on stomach. Move in anti-clockwise circles, multiple times.",
         "alex": "Similar to Makaton version but reversed.",
-        "notes": "Appears similar to “Hungry”."
+        "notes": "Appears similar to “Hungry”.",
+        "see": ["Hungry"]
     },
     {
         "word": "Zero",
@@ -746,8 +918,6 @@
     },
     {
         "word": "Zoe",
-        "makaton": "n/a",
-        "alex": "Same as Cheese",
-        "notes": ""
+        "see": ["Cheese"]
     }
 ]

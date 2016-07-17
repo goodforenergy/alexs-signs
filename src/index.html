@@ -29,19 +29,22 @@
                 </a>
                 <div class="sgn-collapsable collapse" id="{{id}}_collapsible">
                   <div class="well">
-                    <div><span class="sgn-highlight">Makaton:</span> {{makaton}}</div>
-                    <div><span class="sgn-highlight">Alex:</span> {{alex}}</div>
+                    {{#if makaton}}
+                        <div><span class="sgn-highlight">Makaton:</span> {{makaton}}</div>
+                    {{/if}}
+                    {{#if alex}}
+                        <div><span class="sgn-highlight">Alex:</span> {{alex}}</div>
+                    {{/if}}
                     {{#if notes}}
                         <div><span class="sgn-highlight">Notes:</span> {{notes}}</div>
                     {{/if}}
                     {{#if see}}
                         <div><span class="sgn-highlight">See also:</span> 
                         {{#each see}}
-                            <a href="#{{toLowerCase this}}">{{this}}</a>
+                            <a href="#{{toLowerCase this}}">{{this}}</a>{{#unless @last}},{{/unless}}
                         {{/each}}
                         </div>
                     {{/if}}
-
                   </div>
                 </div>
             </div>
