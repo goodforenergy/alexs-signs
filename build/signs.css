@@ -1,11 +1,13 @@
 .sgn-highlight {
   font-weight: bold; }
 
+@media (max-width: 767px) {
+  body {
+    font-size: 2em; } }
+
 @media (min-width: 768px) {
   .sgn-collapsable {
     display: block; }
   .sgn-word {
     pointer-events: none;
-    cursor: default; }
-  body {
-    font-size: 1.5em; } }
+    cursor: default; } }
