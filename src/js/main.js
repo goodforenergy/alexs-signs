@@ -5,6 +5,13 @@
         return str.toLowerCase();
     });
 
+    Handlebars.registerHelper('idSanitise', function(str) {
+        return str
+            .replace(/^[^A-Za-z0-9]+/, '')       // strip leading invalid characters
+            .replace(/[^A-Za-z0-9]+$/, '')       // strip trailing invalid characters
+            .replace(/[^A-Za-z0-9]+/g, '-');     // replace all blocks of invalid characters with a single hyphen
+    });
+
     const template = Handlebars.compile($('#signs-template').html());
 
     $.getJSON('signs.json', function(data) {
