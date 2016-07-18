@@ -440,6 +440,10 @@
         "see": ["Dad"]
     },
     {
+        "word": "Mandarin",
+        "see": ["Orange"]
+    },
+    {
         "word": "March",
         "see": ["Train"]
     },
@@ -532,7 +536,7 @@
         "word": "Orange",
         "makaton": "Place relaxed right fist, palm forward, at right corner of mouth. Clench twice.",
         "alex": "Same as Milk",
-        "notes": "",
+        "notes": "Also used for Mandarin",
         "see": ["Milk"]
     },
     {
