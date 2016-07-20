@@ -1,7 +1,8 @@
 [
     {
         "word": "Ahh",
-        "notes": "Alex says “Aahh”. May mean “Alex”, “To brush teeth”, or “Mouth”.",
+        "says": "Aahh",
+        "notes": "May mean “Alex”, “To brush teeth”, or “Mouth”.",
         "see": ["Alex","To brush teeth","Mouth"]
     },
     {
@@ -14,9 +15,7 @@
     },
     {
         "word": "Arm",
-        "makaton": "Point to arm.",
-        "alex": "n/a",
-        "notes": "Says “Arrum”"
+        "says": "Arrum"
     },
     {
         "word": "Aunty Helen",
@@ -47,6 +46,12 @@
     {
         "word": "Bed",
         "see": ["To sleep"]
+    },
+    {
+        "word": "Biscuit",
+        "makaton": "Form righ fist with thumb extended. Move thumb tip in small circle on back of relaxed left hand.",
+        "alex": "Same as Makaton version but reversed; left hand may have fingers open insted of in a fist.",
+        "notes": ""
     },
     {
         "word": "Bicycle",
@@ -92,8 +97,7 @@
     {
         "word": "Book",
         "makaton": "Place blades of open hands together. Close and open formation.",
-        "alex": "n/a",
-        "notes": "Says “B..k”"
+        "says": "B..k"
     },
     {
         "word": "Boy",
@@ -128,8 +132,7 @@
     {
         "word": "Car",
         "makaton": "Form fists with both hands, palms facing. Move formation as if driving a car.",
-        "alex": "n/a",
-        "notes": "Says “Ka”"
+        "says": "Ka"
     },
     {
         "word": "Cat",
@@ -188,6 +191,10 @@
         "notes": ""
     },
     {
+        "word": "Cracker",
+        "see": ["Biscuit"]
+    },
+    {
         "word": "Crane (construction)",
         "makaton": "",
         "alex": "Lifts both arms above head at 15 degree angle from vertical. Sometimes only left arm is used.",
@@ -208,9 +215,8 @@
     },
     {
         "word": "Dad",
-        "makaton": "Fingerspell “F” quickly, twice.",
-        "alex": "n/a",
-        "notes": "Says “Dada”. Also says this for Man."
+        "says": "Dada",
+        "notes": "Also says this for Man."
     },
     {
         "word": "Different",
@@ -313,9 +319,7 @@
     },
     {
         "word": "Hand",
-        "makaton": "Point to left hand with right index finger.",
-        "alex": "n/a",
-        "notes": "Says “haan”."
+        "says": "Haan"
     },
     {
         "word": "Happy",
@@ -358,9 +362,13 @@
         "see": ["Train"]
     },
     {
+        "word": "Home",
+        "says": "Oommm"
+    },
+    {
         "word": "Honeybear",
         "makaton": "n/a",
-        "alex": "signs To Sleep followed by Bear",
+        "alex": "Signs To Sleep followed by Bear",
         "notes": "Alex's cuddly, also “finding honeybear” is a synonym for going to bed",
         "see": ["Bear","To sleep"]
     },
@@ -494,9 +502,14 @@
     },
     {
         "word": "Mum",
-        "makaton": "Fingerspell “M” quickly, twice.",
-        "alex": "n/a",
-        "notes": "Says “Mum”. Also says this for Woman."
+        "says": "Muum",
+        "notes": "Also says this for Woman."
+    },
+    {
+        "word": "Music",
+        "makaton": "Extend index fingers, palms facing. Turn simultaneously to palms forward and back again.",
+        "alex": "Left index finger moves side to side.",
+        "notes": ""
     },
     {
         "word": "Name",
@@ -506,9 +519,8 @@
     },
     {
         "word": "Nana",
-        "makaton": "",
-        "alex": "",
-        "notes": "Says “Nana”. Also used to refer to any smiley faces."
+        "says": "Nana",
+        "notes": "Also used to refer to any smiley faces."
     },
     {
         "word": "Noisy",
@@ -522,9 +534,7 @@
     },
     {
         "word": "Off",
-        "makaton": "",
-        "alex": "",
-        "notes": "Says “Offff”"
+        "says": "Offff"
     },
     {
         "word": "One",
@@ -718,9 +728,7 @@
     },
     {
         "word": "To brush teeth",
-        "makaton": "Mime brushing teeth.",
-        "alex": "n/a",
-        "notes": "Opens mouth and says “Ahhh”."
+        "says": "Ahhh"
     },
     {
         "word": "To build",
@@ -756,9 +764,21 @@
         "notes": "Also used to mean “I want food” or “Look, there is some food”. Doesn’t always mean that he wants food."
     },
     {
+        "word": "To fall",
+        "makaton": "Place tips of extended right index and middle fingers, slightly apart, on open left palm. Move right formation off left palm to the right and down, ending with fingers pointing up.",
+        "alex": "Same as Makaton version but reversed. Doesn't move formation.",
+        "notes": ""
+    },
+    {
         "word": "To finish",
         "makaton": "Form right fist with thumb extended, palm left. Rock formation sideways from wrist, several times.",
         "alex": "Extends left index finger near body and shakes it from side to side, twice.",
+        "notes": ""
+    },
+    {
+        "word": "To go",
+        "makaton": "Place open right hand, palm back, blade down at chest. Move forward to palm forward. Use directionality.",
+        "alex": "Same as Makaton version but reversed.",
         "notes": ""
     },
     {
@@ -844,11 +864,16 @@
         "word": "Up",
         "makaton": "Hold open right hand, palm up. Move upwards.",
         "alex": "Same as Makaton version but reversed.",
-        "notes": "Will sometimes says “aahpp” instead."
+        "says": "Aahpp"
     },
     {
         "word": "Video",
         "see": ["Digger (to dig)"]
+    },
+    {
+        "word": "Work",
+        "makaton": "Open both hands, blades down. Tap blade of open right hand on index finger of left hand on index finger of left hand, twice.",
+        "alex": "Same as Makaton version but reversed. Sometimes right hand is palm down."
     },
     {
         "word": "Want",
