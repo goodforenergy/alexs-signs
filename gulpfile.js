@@ -14,7 +14,7 @@ var argv = require('yargs').argv,
     dest = 'build';
 
 gulp.task('clean', function() {
-    del(['build']);
+    del(['build', 'tmp']);
 });
 
 gulp.task('build', ['js', 'sass', 'pages', 'resources']);
@@ -41,34 +41,46 @@ gulp.task('resources', function() {
         .pipe(gulp.dest(dest));
 });
 
-gulp.task('pages', function() {
-    let icons = gulp.src("src/img/icon.jpg").pipe(favicons({
-                appName: "Alex's Signs",
-                appDescription: "",
-                developerName: "goodforener.gy",
-                developerURL: "http://goodforener.gy/",
-                background: "#ffffff",
-                path: "icons/",
-                url: "http://signs.azurewebsites.net/",
-                display: "standalone",
-                orientation: "portrait",
-                version: 1.0,
-                logging: false,
-                online: false,
-                html: "icons.html",
-                pipeHTML: true,
-                replace: false
-            }));
-    
+gulp.task('icons', function() {
+    let icons = 
+        gulp.src("src/img/icon.jpg")
+        .pipe(plugins.changed('tmp'))
+        .pipe(gulp.dest('tmp'))
+        .pipe(favicons({
+            appName: "Alex's Signs",
+            appDescription: "",
+            developerName: "goodforener.gy",
+            developerURL: "http://goodforener.gy/",
+            background: "#ffffff",
+            path: "icons/",
+            url: "http://signs.azurewebsites.net/",
+            display: "standalone",
+            orientation: "portrait",
+            version: 1.0,
+            logging: false,
+            online: false,
+            html: "icons.html",
+            pipeHTML: true,
+            replace: false
+        }));
+
     const htmlFilter = filter('**/*.html');
     const noHtmlFilter = filter(['*', '!**/*.html']);
 
-    icons.pipe(noHtmlFilter).pipe(gulp.dest('./build/icons'));
+    icons
+        .pipe(htmlFilter)
+        .pipe(gulp.dest('./tmp'));
+    
+    return icons
+        .pipe(noHtmlFilter)
+        .pipe(gulp.dest('./build/icons'));
+});
 
+gulp.task('pages', ['icons'], function() {
     return gulp.src('src/**/*.html')
         .pipe(plugins.changed(dest))
         .pipe(htmlreplace({
-            'icons': icons.pipe(htmlFilter)
+            'icons': gulp.src('tmp/icons.html')
         }))
         .pipe(gulp.dest(dest));
 
