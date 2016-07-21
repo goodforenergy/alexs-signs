@@ -2,14 +2,14 @@
 	font-weight: bold;
 }
 
-// increase the font size on small displays (phones)
+/* increase the font size on small displays (phones) */
 @media (max-width: 767px) {
 	body {
 		font-size: 2em;
 	}
 }
 
-// Show all information if there's room
+/* Show all information if there's room */
 @media (min-width: 768px) {
 	.sgn-collapsable {
 		display: block;

@@ -244,7 +244,11 @@
         "makaton": "Form fists with both hands. Place left fist, palm up in front of right fist, palm back. Move formation up towards left shoulder (as though digging).",
         "alex": "Forms fist with left hand, tucked in towards arm. Moves across body in clockwise circles.",
         "notes": "Often used when talking about the TV (or other sources of digger videos such a phones), Granddad Kerry, June (Granddad Kerry’s birthday), and the Sand Table. May appear similar to Bus.",
-        "common": "Y"
+        "common": "Y",
+        "video": {
+            "resid": "BC4EAEA9855805D%21420797",
+            "authkey": "ADvDwNp0_hDYBPc"
+        }
     },
     {
         "word": "Dog",
