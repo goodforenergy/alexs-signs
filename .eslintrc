@@ -40,7 +40,8 @@
     "globals": {
         "_": false,
         "$": false,
-        "Handlebars": false
+        "Handlebars": false,
+        "afterglow": false
     },
     "extends": "eslint:recommended"
 }

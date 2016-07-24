@@ -33,32 +33,16 @@
 
         $('body').append(template(groups));
 
-        let initAfterglow = 
-            () => {
-                if (typeof afterglow !== 'undefined') {
-                    afterglow.init();
-                } else {
-                    setTimeout(initAfterglow, 50);
-                }
-            };
-
-        initAfterglow();
+        (function initAfterglow() {
+            if (typeof afterglow !== 'undefined') {
+                afterglow.init();
+            } else {
+                setTimeout(initAfterglow, 50);
+            }
+        }());
 
         $('.sgn-collapsable').on('hidden.bs.collapse', e => {
             $(e.currentTarget).removeAttr('style');
         });
-
-        $('body').on('click',  '[data-resid]', showVideo);
     });
 }());
-
-function showVideo(e) {
-    let lightbox = lity();
-    
-    let resid = $(this).data("resid");
-    let authkey = $(this).data("authkey");
-    
-    let uri = `https://onedrive.live.com/embed?cid=0BC4EAEA9855805D&resid=${resid}&authkey=${authkey}`;
-
-    lightbox(uri);
-}

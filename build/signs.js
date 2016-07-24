@@ -34,31 +34,16 @@
 
         $('body').append(template(groups));
 
-        var initAfterglow = function initAfterglow() {
+        (function initAfterglow() {
             if (typeof afterglow !== 'undefined') {
                 afterglow.init();
             } else {
                 setTimeout(initAfterglow, 50);
             }
-        };
-
-        initAfterglow();
+        })();
 
         $('.sgn-collapsable').on('hidden.bs.collapse', function (e) {
             $(e.currentTarget).removeAttr('style');
         });
-
-        $('body').on('click', '[data-resid]', showVideo);
     });
 })();
-
-function showVideo(e) {
-    var lightbox = lity();
-
-    var resid = $(this).data("resid");
-    var authkey = $(this).data("authkey");
-
-    var uri = 'https://onedrive.live.com/embed?cid=0BC4EAEA9855805D&resid=' + resid + '&authkey=' + authkey;
-
-    lightbox(uri);
-}
