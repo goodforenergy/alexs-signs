@@ -20,7 +20,7 @@ gulp.task('clean', function() {
 gulp.task('build', ['js', 'sass', 'pages', 'resources']);
 
 gulp.task('js', function() {
-    return gulp.src(['bower_components/lity/dist/lity.js', 'src/js/**/*.js'])
+    return gulp.src(['src/js/**/*.js'])
         .pipe(plugins.babel({
             presets: ['es2015']
         }))
@@ -29,9 +29,9 @@ gulp.task('js', function() {
 });
 
 gulp.task('sass', function() {
-    const sassFilter = filter(['*', '**/*.sass'], {restore: true});
+    const sassFilter = filter(['*', '**/*.scss'], {restore: true});
     
-    return gulp.src(['src/sass/**/*.scss', 'bower_components/lity/dist/lity.css'])
+    return gulp.src(['src/sass/**/*.scss'])
         .pipe(sassFilter)
         .pipe(plugins.sass())
         .pipe(sassFilter.restore)

@@ -1,5 +1,21 @@
+$linkColour: #18bc9c;
+
 .sgn-highlight {
 	font-weight: bold;
+}
+
+.sgn-video, .sgn-common {
+	float: right;
+	font-size: 2em;
+	margin-left: 10px;
+	position: relative;
+	top: -0.2em;
+	color: $linkColour;
+
+	&:hover {
+		text-shadow: 0 0 2px #696969; 
+		color: lighten($linkColour, 10%);
+	}
 }
 
 /* increase the font size on small displays (phones) */
@@ -19,4 +35,8 @@
 		pointer-events: none;
 		cursor: default;
 	}
+}
+
+video {
+	display: none;
 }
