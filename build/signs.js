@@ -34,6 +34,16 @@
 
         $('body').append(template(groups));
 
+        var initAfterglow = function initAfterglow() {
+            if (typeof afterglow !== 'undefined') {
+                afterglow.init();
+            } else {
+                setTimeout(initAfterglow, 50);
+            }
+        };
+
+        initAfterglow();
+
         $('.sgn-collapsable').on('hidden.bs.collapse', function (e) {
             $(e.currentTarget).removeAttr('style');
         });
