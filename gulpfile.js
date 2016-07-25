@@ -22,6 +22,8 @@ gulp.task('clean', function() {
 
 gulp.task('build', ['js', 'sass', 'pages', 'resources']);
 
+gulp.task('rebuild', ['clean', 'build']);
+
 gulp.task('js', function() {
     return gulp.src(['src/js/**/*.js'])
         .pipe(plugins.babel({
@@ -43,7 +45,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('resources', function() {
-    return gulp.src('src/resources/**/*')
+    return gulp.src(['src/resources/**/*', '!/**/*.json'])
         .pipe(plugins.changed(dest))
         .pipe(gulp.dest(dest));
 });

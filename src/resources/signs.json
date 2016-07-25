@@ -95,7 +95,8 @@
         "word": "Blue",
         "makaton": "Rub fingers of open right hand in small anti-clockwise circles on the back of relaxed left hand.",
         "alex": "Similar to Makaton version but reversed. Sometimes wipes back of right hand (like cat).",
-        "notes": ""
+        "notes": "",
+        "video": true
     },
     {
         "word": "Boat",
@@ -126,7 +127,8 @@
         "word": "Brown",
         "makaton": "Place right fingertips in front of chin, thumb under chin. Stroke chin, while moving formation forward, closing fingertips on to thumb, twice.",
         "alex": "Similar to Makaton version but reversed with fingers stroking sides of chin.",
-        "notes": ""
+        "notes": "",
+        "video": true
     },
     {
         "word": "Bus",
@@ -290,7 +292,8 @@
         "alex": "Same as Makaton version but reversed.",
         "notes": "May appear similar to Stop.",
         "see": ["Stop"],
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "Fix it",
@@ -308,7 +311,8 @@
     {
         "word": "Food",
         "see": ["To eat"],
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "Fork",
@@ -345,7 +349,8 @@
         "alex": "Usually same as Makaton version but reversed. Sometimes Alex will wipe a different part of the arm (e.g. elbow to shoulder, or back of wrist).",
         "notes": "Often used when talking about lettuce, baby spinach, etc. Could be confused with Cat or Slow.",
         "see": ["Cat", "Slow"],
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "Hand",
@@ -412,7 +417,8 @@
         "makaton": "Place open right hand on stomach. Move in anti-clockwise circle.",
         "alex": "Same as Makaton but reversed.",
         "notes": "Looks similar to “Yummy”.",
-        "see": ["Yummy"]
+        "see": ["Yummy"],
+        "video": true
     },
     {
         "word": "I",
@@ -481,7 +487,8 @@
     {
         "word": "Mandarin",
         "see": ["Orange"],
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "March",
@@ -580,7 +587,8 @@
         "makaton": "Right index finger extended, palm out in front of body.",
         "alex": "Same as Makaton version but reversed.",
         "notes": "May be used to refer to last (as in the last one). Also may refer to Thomas the Tank Engine (he has a 1 on his side).",
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "Orange",
@@ -588,7 +596,8 @@
         "alex": "Same as Milk",
         "notes": "Also used for Mandarin",
         "see": ["Milk"],
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "Panda",
@@ -661,7 +670,8 @@
         "makaton": "Extend right index finger. Place on chin. Move in a small clockwise circle.",
         "alex": "Wipes left fingers down chin",
         "notes": "Often used when talking about (red) capsicums.",
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "Rubbish",
@@ -727,7 +737,8 @@
         "alex": "May use two hands, though usually just uses left hand. Forward action not very pronounced.",
         "notes": "May appear similar to Five.",
         "see": ["Five"],
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "Sunday",
@@ -873,7 +884,8 @@
         "makaton": "Move heel of open right hand down chest, turning palm down.",
         "alex": "Similar to Makaton version but reversed, sometimes hand wipes down throat instead of chest.",
         "notes": "Often used with other signs when Alex is asking for something nicely, e.g. “I want banana please”.",
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "To wash (bathe)",
@@ -911,7 +923,8 @@
         "makaton": "Right index and middle fingers extended, palm out in front of body.",
         "alex": "Same as Makaton version but reversed, extended fingers may be held tightly together.",
         "notes": "",
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "Uncle David",
@@ -978,7 +991,8 @@
         "alex": "Similar to Makaton version but reversed and index finger and thumb hold onto top of left ear.",
         "notes": "May appear similar to White",
         "see": ["White"],
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "You",
