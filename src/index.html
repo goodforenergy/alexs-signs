@@ -15,56 +15,11 @@
         <!-- endbuild -->
     </head>
     <body class="container">
+        <!-- build:list -->
+        <!-- endbuild -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/afterglow/latest/afterglow.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js" type="text/javascript" charset="utf-8"></script>
-    <script id="signs-template" type="text/x-handlebars-template">
-
-        {{#each this}}
-        <h3>{{@key}}</h3>
-            {{#each this}}
-            <div>
-                <a class="sgn-word" role="button" data-toggle="collapse" id="{{idSanitise id}}" href="#{{idSanitise id}}_collapsible" aria-expanded="false" aria-controls="collapseExample">
-                  {{word}}
-                </a>
-                <div class="sgn-collapsable collapse" id="{{idSanitise id}}_collapsible">
-                  <div class="well">
-                    {{#if common}}
-                        <div class="sgn-common glyphicon glyphicon-asterisk"/>
-                    {{/if}}
-                    {{#if video}}
-                        <a class="afterglow" href="#{{idSanitise id}}_video"><div class="sgn-video glyphicon glyphicon-film"/></a>
-                        <video id="{{idSanitise id}}_video" width="360" height="640" data-autoresize="fit">
-                            <source type="video/mp4" src="video/{{idSanitise id}}.m4v"/>
-                        </video>                    
-                    {{/if}}
-                    {{#if makaton}}
-                        <div><span class="sgn-highlight">Makaton:</span> {{makaton}}</div>
-                    {{/if}}
-                    {{#if alex}}
-                        <div><span class="sgn-highlight">Alex:</span> {{alex}}</div>
-                    {{/if}}
-                    {{#if says}}
-                        <div><span class="sgn-highlight">Says:</span> {{says}}</div>
-                    {{/if}}
-                    {{#if notes}}
-                        <div><span class="sgn-highlight">Notes:</span> {{notes}}</div>
-                    {{/if}}
-                    {{#if see}}
-                        <div><span class="sgn-highlight">See also:</span> 
-                        {{#each see}}
-                            <a href="#{{toLowerCase (idSanitise this)}}">{{this}}</a>{{#unless @last}},{{/unless}}
-                        {{/each}}
-                        </div>
-                    {{/if}}
-                    <br style="clear: both"/>
-                  </div>
-                </div>
-            </div>
-            {{/each}}
-        {{/each}}
-    </script>
     <script src="signs.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>

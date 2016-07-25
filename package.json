@@ -22,6 +22,10 @@
     "gulp-favicons": "*",
     "gulp-html-replace": "*",
     "gulp-filter": "*",
+    "gulp-data": "*",
+    "gulp-handlebars-html": "*",
+    "handlebars": "*",
+    "fs": "*",
     "yargs": "^4.8.0"
   }
 }

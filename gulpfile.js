@@ -9,8 +9,11 @@ var argv = require('yargs').argv,
     plugins = require('gulp-load-plugins')(),
     favicons = require("gulp-favicons"),
     htmlreplace = require("gulp-html-replace"),
-    gutil = require("gulp-util"),
     filter = require("gulp-filter"),
+    handlebars = require('handlebars'),
+    gulpHandlebars = require('gulp-handlebars-html')(handlebars), //default to require('handlebars') if not provided
+    data = require('gulp-data'),
+    fs = require('fs'),
     dest = 'build';
 
 gulp.task('clean', function() {
@@ -30,7 +33,7 @@ gulp.task('js', function() {
 
 gulp.task('sass', function() {
     const sassFilter = filter(['*', '**/*.scss'], {restore: true});
-    
+
     return gulp.src(['src/sass/**/*.scss'])
         .pipe(sassFilter)
         .pipe(plugins.sass())
@@ -46,7 +49,7 @@ gulp.task('resources', function() {
 });
 
 gulp.task('icons', function() {
-    let icons = 
+    let icons =
         gulp.src("src/img/icon.jpg")
         .pipe(plugins.changed('tmp'))
         .pipe(gulp.dest('tmp'))
@@ -74,17 +77,18 @@ gulp.task('icons', function() {
     icons
         .pipe(htmlFilter)
         .pipe(gulp.dest('./tmp'));
-    
+
     return icons
         .pipe(noHtmlFilter)
         .pipe(gulp.dest('./build/icons'));
 });
 
-gulp.task('pages', ['icons'], function() {
+gulp.task('pages', ['icons', 'handlebars'], function() {
     return gulp.src('src/**/*.html')
         .pipe(plugins.changed(dest))
         .pipe(htmlreplace({
-            'icons': gulp.src('tmp/icons.html')
+            icons: gulp.src('tmp/icons.html'),
+            list: gulp.src('tmp/list.handlebars')
         }))
         .pipe(gulp.dest(dest));
 
@@ -105,4 +109,41 @@ gulp.task('serve', ['build'], function() {
             livereload: true,
             open: 'index.html'
         }));
+});
+
+gulp.task('handlebars', function() {
+    const dataFile = 'src/resources/signs.json';
+
+    handlebars.registerHelper('toLowerCase', function(str) {
+        return str.toLowerCase();
+    });
+
+    handlebars.registerHelper('idSanitise', function(str) {
+        return str
+            .replace(/^[^A-Za-z0-9]+/, '')       // strip leading invalid characters
+            .replace(/[^A-Za-z0-9]+$/, '')       // strip trailing invalid characters
+            .replace(/[^A-Za-z0-9]+/g, '-');     // replace all blocks of invalid characters with a single hyphen
+
+    });
+
+    return gulp.src('src/hb/list.handlebars')
+        .pipe(data(function() {
+            let data = JSON.parse(fs.readFileSync(dataFile));
+            data.forEach(sign => {
+                sign.id = sign.word.toLowerCase().match(/\w+/g).join('-');
+            });
+
+            data.sort((a, b) => {
+                return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
+            });
+
+            return data.reduce((acc, sign) => {
+                const letter = sign.word.substr(0, 1);
+                acc[letter] = acc[letter] || [];
+                acc[letter].push(sign);
+                return acc;
+            }, {});
+        }))
+        .pipe(gulpHandlebars())
+        .pipe(gulp.dest('tmp'));
 });

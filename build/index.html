@@ -53,56 +53,2361 @@
 
     </head>
     <body class="container">
-    <script type="text/javascript" src="//cdn.jsdelivr.net/afterglow/latest/afterglow.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js" type="text/javascript" charset="utf-8"></script>
-    <script id="signs-template" type="text/x-handlebars-template">
-
-        {{#each this}}
-        <h3>{{@key}}</h3>
-            {{#each this}}
+                <h3>A</h3>
             <div>
-                <a class="sgn-word" role="button" data-toggle="collapse" id="{{idSanitise id}}" href="#{{idSanitise id}}_collapsible" aria-expanded="false" aria-controls="collapseExample">
-                  {{word}}
+                <a class="sgn-word" role="button" data-toggle="collapse" id="ahh" href="#ahh_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Ahh
                 </a>
-                <div class="sgn-collapsable collapse" id="{{idSanitise id}}_collapsible">
+                <div class="sgn-collapsable collapse" id="ahh_collapsible">
                   <div class="well">
-                    {{#if common}}
-                        <div class="sgn-common glyphicon glyphicon-asterisk"/>
-                    {{/if}}
-                    {{#if video}}
-                        <a class="afterglow" href="#{{idSanitise id}}_video"><div class="sgn-video glyphicon glyphicon-film"/></a>
-                        <video id="{{idSanitise id}}_video" width="360" height="640" data-autoresize="fit">
-                            <source type="video/mp4" src="video/{{idSanitise id}}.m4v"/>
-                        </video>                    
-                    {{/if}}
-                    {{#if makaton}}
-                        <div><span class="sgn-highlight">Makaton:</span> {{makaton}}</div>
-                    {{/if}}
-                    {{#if alex}}
-                        <div><span class="sgn-highlight">Alex:</span> {{alex}}</div>
-                    {{/if}}
-                    {{#if says}}
-                        <div><span class="sgn-highlight">Says:</span> {{says}}</div>
-                    {{/if}}
-                    {{#if notes}}
-                        <div><span class="sgn-highlight">Notes:</span> {{notes}}</div>
-                    {{/if}}
-                    {{#if see}}
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Says:</span> Aahh</div>
+                        <div><span class="sgn-highlight">Notes:</span> May mean “Alex”, “To brush teeth”, or “Mouth”.</div>
                         <div><span class="sgn-highlight">See also:</span> 
-                        {{#each see}}
-                            <a href="#{{toLowerCase (idSanitise this)}}">{{this}}</a>{{#unless @last}},{{/unless}}
-                        {{/each}}
+                            <a href="#alex">Alex</a>,
+                            <a href="#to-brush-teeth">To brush teeth</a>,
+                            <a href="#mouth">Mouth</a>
                         </div>
-                    {{/if}}
                     <br style="clear: both"/>
                   </div>
                 </div>
             </div>
-            {{/each}}
-        {{/each}}
-    </script>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="alex" href="#alex_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Alex
+                </a>
+                <div class="sgn-collapsable collapse" id="alex_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#ahh">Ahh</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="alligator" href="#alligator_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Alligator
+                </a>
+                <div class="sgn-collapsable collapse" id="alligator_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#crocodile">Crocodile</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="arm" href="#arm_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Arm
+                </a>
+                <div class="sgn-collapsable collapse" id="arm_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Says:</span> Arrum</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="aunty-helen" href="#aunty-helen_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Aunty Helen
+                </a>
+                <div class="sgn-collapsable collapse" id="aunty-helen_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#bird">Bird</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>B</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="baby-spinach" href="#baby-spinach_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Baby Spinach
+                </a>
+                <div class="sgn-collapsable collapse" id="baby-spinach_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#green">Green</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="banana" href="#banana_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Banana
+                </a>
+                <div class="sgn-collapsable collapse" id="banana_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Extend left index finger. Place right index finger onto ball of right thumb. Move right formation in downward “peeling” movements from tip of left index finger, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Monkey.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#monkey">Monkey</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="bang" href="#bang_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Bang
+                </a>
+                <div class="sgn-collapsable collapse" id="bang_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#cymbals">Cymbals</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="bear" href="#bear_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Bear
+                </a>
+                <div class="sgn-collapsable collapse" id="bear_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Form “C” with index fingers and thumbs of both hands. Place fingertips on head with thumbs on temples to represent the ears of a teddy bear.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Loose fist formed with left hand and tapped against top left side of head, twice.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used to mean Koala and Panda. Often used to refer to Bear Hunt (as in I want to go outside with you Nana). May also refer to Nana. May appear similar to “To shower”.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#to-shower">To shower</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="bed" href="#bed_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Bed
+                </a>
+                <div class="sgn-collapsable collapse" id="bed_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#to-sleep">To sleep</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="bicycle" href="#bicycle_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Bicycle
+                </a>
+                <div class="sgn-collapsable collapse" id="bicycle_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#motorcycle">Motorcycle</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="big" href="#big_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Big
+                </a>
+                <div class="sgn-collapsable collapse" id="big_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <a class="afterglow" href="#big_video"><div class="sgn-video glyphicon glyphicon-film"></div></a>
+                        <video id="big_video" width="360" height="640" data-autoresize="fit">
+                            <source type="video/mp4" src="video/big.m4v"/>
+                        </video>                    
+                        <div><span class="sgn-highlight">Makaton:</span> Form slightly cupped hands, palms facing. Move hands outwards in a small arc.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Mostly same as Makaton version but reversed. Sometimes only the left hand is used.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="bird" href="#bird_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Bird
+                </a>
+                <div class="sgn-collapsable collapse" id="bird_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index finger and thumb, palm down. Place under chin. Open and close finger and thumb twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Extends left fingers and thumb, palm down. Opens and closes fingers and thumb twice.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used when talking about Aunty Helen, or January (Aunty Helen’s birthday).</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="biscuit" href="#biscuit_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Biscuit
+                </a>
+                <div class="sgn-collapsable collapse" id="biscuit_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Form righ fist with thumb extended. Move thumb tip in small circle on back of relaxed left hand.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed; left hand may have fingers open insted of in a fist.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="black" href="#black_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Black
+                </a>
+                <div class="sgn-collapsable collapse" id="black_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Form right fist. Place formation, palm left, on right check. Move forward and down.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed. Doesn&#x27;t always move fist.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="blow-kiss" href="#blow-kiss_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Blow Kiss
+                </a>
+                <div class="sgn-collapsable collapse" id="blow-kiss_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> n/a</div>
+                        <div><span class="sgn-highlight">Alex:</span> Palm of open left hand placed on mouth and moved away from body.</div>
+                        <div><span class="sgn-highlight">Notes:</span> May appear the same as Please</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#please">Please</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="blue" href="#blue_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Blue
+                </a>
+                <div class="sgn-collapsable collapse" id="blue_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Rub fingers of open right hand in small anti-clockwise circles on the back of relaxed left hand.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed. Sometimes wipes back of right hand (like cat).</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="boat" href="#boat_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Boat
+                </a>
+                <div class="sgn-collapsable collapse" id="boat_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place fingertips of both hands together, palms apart, blades down. Move formation forward.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="book" href="#book_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Book
+                </a>
+                <div class="sgn-collapsable collapse" id="book_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Place blades of open hands together. Close and open formation.</div>
+                        <div><span class="sgn-highlight">Says:</span> B..k</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="boy" href="#boy_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Boy
+                </a>
+                <div class="sgn-collapsable collapse" id="boy_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index finger. Rub side of finger forwards and backwards across the chin, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton but reversed. Finger is often only moved across chin once.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="bright" href="#bright_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Bright
+                </a>
+                <div class="sgn-collapsable collapse" id="bright_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Alex:</span> Places left forearm over eyes</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="brown" href="#brown_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Brown
+                </a>
+                <div class="sgn-collapsable collapse" id="brown_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place right fingertips in front of chin, thumb under chin. Stroke chin, while moving formation forward, closing fingertips on to thumb, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed with fingers stroking sides of chin.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="bus" href="#bus_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Bus
+                </a>
+                <div class="sgn-collapsable collapse" id="bus_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Form fists with both hands, palms up. Move formation as if driving a bus.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Move closed left fist across body in a clockwise circle, twice.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>C</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="cake" href="#cake_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Cake
+                </a>
+                <div class="sgn-collapsable collapse" id="cake_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Bounce tips of fingers and thumb of cupped right hand on back of left hand, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version, but reversed.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used to mean Muffin.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="car" href="#car_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Car
+                </a>
+                <div class="sgn-collapsable collapse" id="car_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Form fists with both hands, palms facing. Move formation as if driving a car.</div>
+                        <div><span class="sgn-highlight">Says:</span> Ka</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="cat" href="#cat_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Cat
+                </a>
+                <div class="sgn-collapsable collapse" id="cat_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Stroke back of open left hand with fingers of open right hand, palm down, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed. May appear similar to Green.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#green">Green</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="cheese" href="#cheese_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Cheese
+                </a>
+                <div class="sgn-collapsable collapse" id="cheese_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place open right fingertips, thumb tucked in, above left palm. Move right formation up and down left palm (from wrist to fingertips and back)</div>
+                        <div><span class="sgn-highlight">Alex:</span> Open left palm moves right and left and back again (similar to Makaton but further out from body with larger motions and right hand is not used).</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used when talking about Zoe or September (Zoe’s birthday).</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="cheetah" href="#cheetah_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Cheetah
+                </a>
+                <div class="sgn-collapsable collapse" id="cheetah_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#lion">Lion</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="clown" href="#clown_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Clown
+                </a>
+                <div class="sgn-collapsable collapse" id="clown_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#hat">Hat</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="coffee" href="#coffee_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Coffee
+                </a>
+                <div class="sgn-collapsable collapse" id="coffee_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Form fists with both hands. Move right fist in small anti-clockwise circles above left fist.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton but reversed.</div>
+                        <div><span class="sgn-highlight">Notes:</span> May appear similar to To Make</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#to-make-to-do">To make (to do)</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="cold" href="#cold_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Cold
+                </a>
+                <div class="sgn-collapsable collapse" id="cold_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Form fists with both hands. Place at sides of chest. Move formation in quick, shot sideways movements, several times.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton, may not form fists.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="colouring" href="#colouring_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Colouring
+                </a>
+                <div class="sgn-collapsable collapse" id="colouring_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#to-draw">To draw</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="communication" href="#communication_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Communication
+                </a>
+                <div class="sgn-collapsable collapse" id="communication_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Form “C” with both hands. Place right thumb between left thumb and fingers. Move formation backwards and forwards alternately, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton, but reversed and right hand doesn’t move.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="concrete-mixer" href="#concrete-mixer_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Concrete Mixer
+                </a>
+                <div class="sgn-collapsable collapse" id="concrete-mixer_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index finger, blade down. Move finger down in anti-clockwise circle, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton, but reversed and circles are a bit irregular.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="corn" href="#corn_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Corn
+                </a>
+                <div class="sgn-collapsable collapse" id="corn_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Both fists are held in front of the chin, palms facing each other, blades down, thumbs extended, forefingers hooked. Moving from the wrists, the hands are twisted slightly up and down, several times.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton, but only uses left hand.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="cracker" href="#cracker_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Cracker
+                </a>
+                <div class="sgn-collapsable collapse" id="cracker_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#biscuit">Biscuit</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="crane-construction" href="#crane-construction_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Crane (construction)
+                </a>
+                <div class="sgn-collapsable collapse" id="crane-construction_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <a class="afterglow" href="#crane-construction_video"><div class="sgn-video glyphicon glyphicon-film"></div></a>
+                        <video id="crane-construction_video" width="360" height="640" data-autoresize="fit">
+                            <source type="video/mp4" src="video/crane-construction.m4v"/>
+                        </video>                    
+                        <div><span class="sgn-highlight">Alex:</span> Lifts both arms above head at 15 degree angle from vertical. Sometimes only left arm is used.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="crocodile" href="#crocodile_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Crocodile
+                </a>
+                <div class="sgn-collapsable collapse" id="crocodile_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> The right arm is extended above the head, the left arm forward from the body, with the palms of the hands facing each other and the fingers hooked. The right arm is brought down so that the hands meet, the right hand fingers covering the left, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to the Makaton version, except reversed and the right hand isn’t always used, and Alex only moves his hands once.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#alligator">Alligator</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="cymbals" href="#cymbals_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Cymbals
+                </a>
+                <div class="sgn-collapsable collapse" id="cymbals_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Alex:</span> Pretends to hold cymbals and bang them.</div>
+                        <div><span class="sgn-highlight">Notes:</span> May also be used to mean Bang</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>D</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="dad" href="#dad_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Dad
+                </a>
+                <div class="sgn-collapsable collapse" id="dad_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Says:</span> Dada</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also says this for Man.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="different" href="#different_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Different
+                </a>
+                <div class="sgn-collapsable collapse" id="different_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend index fingers, palms down. Place sides of fingers together. Move apart, turning to palms up.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but performed only using left hand.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="digger-to-dig" href="#digger-to-dig_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Digger (to dig)
+                </a>
+                <div class="sgn-collapsable collapse" id="digger-to-dig_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <a class="afterglow" href="#digger-to-dig_video"><div class="sgn-video glyphicon glyphicon-film"></div></a>
+                        <video id="digger-to-dig_video" width="360" height="640" data-autoresize="fit">
+                            <source type="video/mp4" src="video/digger-to-dig.m4v"/>
+                        </video>                    
+                        <div><span class="sgn-highlight">Makaton:</span> Form fists with both hands. Place left fist, palm up in front of right fist, palm back. Move formation up towards left shoulder (as though digging).</div>
+                        <div><span class="sgn-highlight">Alex:</span> Forms fist with left hand, tucked in towards arm. Moves across body in clockwise circles.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used when talking about the TV (or other sources of digger videos such a phones), Granddad Kerry, June (Granddad Kerry’s birthday), and the Sand Table. May appear similar to Bus.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="dog" href="#dog_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Dog
+                </a>
+                <div class="sgn-collapsable collapse" id="dog_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Hit thigh with open right hand, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Pats body (or table if available) with open left hand, twice (as though signalling “come here dog”).</div>
+                        <div><span class="sgn-highlight">Says:</span> Pants with mouth open and tongue out.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used to refer to Grandad Geoff, or December (Granddad Geoff’s birthday).</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="down" href="#down_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Down
+                </a>
+                <div class="sgn-collapsable collapse" id="down_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Hold open right hand, palm down. Move downwards.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>E</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="end" href="#end_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  End
+                </a>
+                <div class="sgn-collapsable collapse" id="end_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Alex:</span> Forms fists with both hands, palms facing. Taps fists together.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Same as Cymbals, may also mean Bang.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#cymbals">Cymbals</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="excavator" href="#excavator_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Excavator
+                </a>
+                <div class="sgn-collapsable collapse" id="excavator_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <a class="afterglow" href="#excavator_video"><div class="sgn-video glyphicon glyphicon-film"></div></a>
+                        <video id="excavator_video" width="360" height="640" data-autoresize="fit">
+                            <source type="video/mp4" src="video/excavator.m4v"/>
+                        </video>                    
+                        <div><span class="sgn-highlight">Makaton:</span> Unknown</div>
+                        <div><span class="sgn-highlight">Alex:</span> Fingerspells “x” followed by Digger.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#digger-to-dig">Digger (to dig)</a>,
+                            <a href="#x">X</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>F</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="fig" href="#fig_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Fig
+                </a>
+                <div class="sgn-collapsable collapse" id="fig_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#pig">Pig</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="five" href="#five_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Five
+                </a>
+                <div class="sgn-collapsable collapse" id="five_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Right hand up, palm out, in front of body, with fingers slightly spread.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                        <div><span class="sgn-highlight">Notes:</span> May appear similar to Stop.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#stop">Stop</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="fix-it" href="#fix-it_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Fix it
+                </a>
+                <div class="sgn-collapsable collapse" id="fix-it_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Left hand open, blade down. Form fist with right hand, palm down and rotate right fist towards chest and back.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton but reversed with right hand as a fist.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="flower" href="#flower_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Flower
+                </a>
+                <div class="sgn-collapsable collapse" id="flower_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Form right fist. Place formation slightly below and in front of chin. Inhale as if smelling flowers.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="food" href="#food_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Food
+                </a>
+                <div class="sgn-collapsable collapse" id="food_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#to-eat">To eat</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="fork" href="#fork_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Fork
+                </a>
+                <div class="sgn-collapsable collapse" id="fork_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index, middle and ring fingers. Jab into palm of open left hand, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>G</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="goodbye" href="#goodbye_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Goodbye
+                </a>
+                <div class="sgn-collapsable collapse" id="goodbye_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Use natural gesture.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Hello</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#hello">Hello</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="granddad-geoff" href="#granddad-geoff_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Granddad Geoff
+                </a>
+                <div class="sgn-collapsable collapse" id="granddad-geoff_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#dog">Dog</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="granddad-kerry" href="#granddad-kerry_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Granddad Kerry
+                </a>
+                <div class="sgn-collapsable collapse" id="granddad-kerry_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#digger-to-dig">Digger (to dig)</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="granny-carolyn" href="#granny-carolyn_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Granny (Carolyn)
+                </a>
+                <div class="sgn-collapsable collapse" id="granny-carolyn_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as To Wash/Swimming Pool</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#to-wash-bathe">To wash (bathe)</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="green" href="#green_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Green
+                </a>
+                <div class="sgn-collapsable collapse" id="green_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Place right blade on wrist of left arm. Sweep right hand to upper arm.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Usually same as Makaton version but reversed. Sometimes Alex will wipe a different part of the arm (e.g. elbow to shoulder, or back of wrist).</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used when talking about lettuce, baby spinach, etc. Could be confused with Cat or Slow.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#cat">Cat</a>,
+                            <a href="#slow">Slow</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>H</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="hand" href="#hand_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Hand
+                </a>
+                <div class="sgn-collapsable collapse" id="hand_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Says:</span> Haan</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="happy" href="#happy_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Happy
+                </a>
+                <div class="sgn-collapsable collapse" id="happy_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Clap heels of open hands together twice, while moving in small outward circles (like an excited happy toddler).</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as “To clap”.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#to-clap">To clap</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="hard-hat" href="#hard-hat_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Hard Hat
+                </a>
+                <div class="sgn-collapsable collapse" id="hard-hat_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#hat">Hat</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="hardware-store" href="#hardware-store_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Hardware Store
+                </a>
+                <div class="sgn-collapsable collapse" id="hardware-store_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#lawnmower">Lawnmower</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="hat" href="#hat_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Hat
+                </a>
+                <div class="sgn-collapsable collapse" id="hat_collapsible">
+                  <div class="well">
+                        <a class="afterglow" href="#hat_video"><div class="sgn-video glyphicon glyphicon-film"></div></a>
+                        <video id="hat_video" width="360" height="640" data-autoresize="fit">
+                            <source type="video/mp4" src="video/hat.m4v"/>
+                        </video>                    
+                        <div><span class="sgn-highlight">Alex:</span> Pats head with open left hand</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used to refer to parties (because of party hats), Clowns (again because of the hat), Hard Hat, or wanting you say “Woo Hoo”.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="helicopter" href="#helicopter_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Helicopter
+                </a>
+                <div class="sgn-collapsable collapse" id="helicopter_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> The right fist is held up at head level, palm back, with the forefinger extended and pointing up, and is moved in small horizontal anticlockwise circles, bending back and forth at the wrist a little, several times.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Extends left index finger near head and waggles it back and forth, twice.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used to mean Plane (Alex knows they’re different but finds the Plane sign too hard).</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="hello" href="#hello_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Hello
+                </a>
+                <div class="sgn-collapsable collapse" id="hello_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Open right hand, fingers separated, palm forward. Move in small arc from centre chest to right.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Waves.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Uses same gesture for Goodbye.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="henry" href="#henry_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Henry
+                </a>
+                <div class="sgn-collapsable collapse" id="henry_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#train">Train</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="home" href="#home_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Home
+                </a>
+                <div class="sgn-collapsable collapse" id="home_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Says:</span> Oommm</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="honeybear" href="#honeybear_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Honeybear
+                </a>
+                <div class="sgn-collapsable collapse" id="honeybear_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> n/a</div>
+                        <div><span class="sgn-highlight">Alex:</span> Signs To Sleep followed by Bear</div>
+                        <div><span class="sgn-highlight">Notes:</span> Alex&#x27;s cuddly, also “finding honeybear” is a synonym for going to bed</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#bear">Bear</a>,
+                            <a href="#to-sleep">To sleep</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="hot" href="#hot_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Hot
+                </a>
+                <div class="sgn-collapsable collapse" id="hot_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place right fingertips on chin. Turn hand quickly to palm down while moving hand forward, stopping with stress.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton but reversed with left hand placed in front of face.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="hungry" href="#hungry_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Hungry
+                </a>
+                <div class="sgn-collapsable collapse" id="hungry_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place open right hand on stomach. Move in anti-clockwise circle.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton but reversed.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Looks similar to “Yummy”.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#yummy">Yummy</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>I</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="i" href="#i_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  I
+                </a>
+                <div class="sgn-collapsable collapse" id="i_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index finger. Point to self.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton but reversed</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also means Me</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#me">Me</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>J</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="january" href="#january_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  January
+                </a>
+                <div class="sgn-collapsable collapse" id="january_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#bird">Bird</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>K</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="knife" href="#knife_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Knife
+                </a>
+                <div class="sgn-collapsable collapse" id="knife_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend both index fingers, blades down. Move right formation backwards and forwards on left formation.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Extends left index finger, blade facing body. Moves back and forwards somewhere over right hand.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="koala" href="#koala_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Koala
+                </a>
+                <div class="sgn-collapsable collapse" id="koala_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#bear">Bear</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>L</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="last" href="#last_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Last
+                </a>
+                <div class="sgn-collapsable collapse" id="last_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Open right hand, palm down. Move formation down from wrist.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version, but reversed and may be repeated.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Appears very similar to To Wash or Granny.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#to-wash">To wash</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="lawnmower" href="#lawnmower_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Lawnmower
+                </a>
+                <div class="sgn-collapsable collapse" id="lawnmower_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Alex:</span> Forms fist with left hand, palm down, with arm angled out a little from body. Moves arm out from body and back, twice.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used when talking about gardening equipment (e.g. Weed wackers, leaf blowers), or the Hardware Store.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="lettuce" href="#lettuce_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Lettuce
+                </a>
+                <div class="sgn-collapsable collapse" id="lettuce_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#green">Green</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="light" href="#light_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Light
+                </a>
+                <div class="sgn-collapsable collapse" id="light_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place right fingernails on ball of tight thumb. Place formation at eye level at right side of face, palm down. Flick hand open.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Milk</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#milk">Milk</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="lion" href="#lion_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Lion
+                </a>
+                <div class="sgn-collapsable collapse" id="lion_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Both hands are held out, palms down with the fingers apart and hooked, and moved alternately up and forward in small vertical circles, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Forms claw with left hand, palm facing out, and moves it down and up a little.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Uses same sign for other big cats, such as Tiger, Cheetah, etc.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="little" href="#little_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Little
+                </a>
+                <div class="sgn-collapsable collapse" id="little_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Open both hands, palms facing. Move hands towards each other.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Mostly same as Makaton version but reversed. Sometimes hands meet. </div>
+                        <div><span class="sgn-highlight">Notes:</span> Similar to Alex’s version of Clap, Happy, and Sunday.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#to-clap">To clap</a>,
+                            <a href="#happy">Happy</a>,
+                            <a href="#sunday">Sunday</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>M</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="man" href="#man_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Man
+                </a>
+                <div class="sgn-collapsable collapse" id="man_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#dad">Dad</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="mandarin" href="#mandarin_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Mandarin
+                </a>
+                <div class="sgn-collapsable collapse" id="mandarin_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#orange">Orange</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="march" href="#march_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  March
+                </a>
+                <div class="sgn-collapsable collapse" id="march_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#train">Train</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="me" href="#me_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Me
+                </a>
+                <div class="sgn-collapsable collapse" id="me_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#i">I</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="milk" href="#milk_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Milk
+                </a>
+                <div class="sgn-collapsable collapse" id="milk_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Form right fist. Open and close fist, moving down slightly, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Opens and closes left fist.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used when talking about cold things (as in cold like milk from the supermarket). Alex uses the same sign to mean Orange, Light, and Star (though these should be different).</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#orange">Orange</a>,
+                            <a href="#light">Light</a>,
+                            <a href="#star">Star</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="monkey" href="#monkey_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Monkey
+                </a>
+                <div class="sgn-collapsable collapse" id="monkey_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> The right hand is held above the right side of the waist, palm up, blade down, the fingers flexed onto the thumb with the backs of the fingertips touching the body, and is moved up and round towards the armpit.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used to mean Banana</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#banana">Banana</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="more" href="#more_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  More
+                </a>
+                <div class="sgn-collapsable collapse" id="more_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Place fingertips of cupped right hand on centre chest. Move formation forward.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Opens left hand, palm out. Moves out and in, twice.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Alex used the same sign to cover both want and more, though he will differentiate when using his picture boards.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="motorcycle" href="#motorcycle_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Motorcycle
+                </a>
+                <div class="sgn-collapsable collapse" id="motorcycle_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Both fists are held out from slightly bent elbows, some way apart, palm down, blades out. The right fist is flexed slightly up from the wrist, twice. (Like gripping the handles of a motorbike).</div>
+                        <div><span class="sgn-highlight">Alex:</span> Left fist held out from slight bent elbow, palm down blade out. Fist is flexed slightly down from the wrist, twice.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used by Alex to mean Quadbike, Bicycle, and Scooter.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="mouse" href="#mouse_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Mouse
+                </a>
+                <div class="sgn-collapsable collapse" id="mouse_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Form fist with right hand, index finger extended, palm facing chest. Bounce formation along left forearm towards elbow.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed. Sometimes uses sign for Cheese.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#cheese">Cheese</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="mouth" href="#mouth_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Mouth
+                </a>
+                <div class="sgn-collapsable collapse" id="mouth_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#ahh">Ahh</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="muffin" href="#muffin_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Muffin
+                </a>
+                <div class="sgn-collapsable collapse" id="muffin_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#cake">Cake</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="mum" href="#mum_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Mum
+                </a>
+                <div class="sgn-collapsable collapse" id="mum_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Says:</span> Muum</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also says this for Woman.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="music" href="#music_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Music
+                </a>
+                <div class="sgn-collapsable collapse" id="music_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend index fingers, palms facing. Turn simultaneously to palms forward and back again.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Left index finger moves side to side.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>N</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="name" href="#name_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Name
+                </a>
+                <div class="sgn-collapsable collapse" id="name_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index and middle fingers. Place on right temple. Move formation forward, turning palm up and forward.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed, doesn&#x27;t always start from temple.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="nana" href="#nana_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Nana
+                </a>
+                <div class="sgn-collapsable collapse" id="nana_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Says:</span> Nana</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used to refer to any smiley faces.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="noisy" href="#noisy_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Noisy
+                </a>
+                <div class="sgn-collapsable collapse" id="noisy_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Alex:</span> Taps left index finger on left side of head, in front of ear, twice.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used to mean “What sound does it make?” and “I don’t feel good”.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>O</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="oats" href="#oats_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Oats
+                </a>
+                <div class="sgn-collapsable collapse" id="oats_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#pig">Pig</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="off" href="#off_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Off
+                </a>
+                <div class="sgn-collapsable collapse" id="off_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Says:</span> Offff</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="one" href="#one_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  One
+                </a>
+                <div class="sgn-collapsable collapse" id="one_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Right index finger extended, palm out in front of body.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                        <div><span class="sgn-highlight">Notes:</span> May be used to refer to last (as in the last one). Also may refer to Thomas the Tank Engine (he has a 1 on his side).</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="orange" href="#orange_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Orange
+                </a>
+                <div class="sgn-collapsable collapse" id="orange_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Place relaxed right fist, palm forward, at right corner of mouth. Clench twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Milk</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used for Mandarin</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#milk">Milk</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>P</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="panda" href="#panda_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Panda
+                </a>
+                <div class="sgn-collapsable collapse" id="panda_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#bear">Bear</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="party" href="#party_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Party
+                </a>
+                <div class="sgn-collapsable collapse" id="party_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#hat">Hat</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="peg" href="#peg_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Peg
+                </a>
+                <div class="sgn-collapsable collapse" id="peg_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#pig">Pig</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="penguin" href="#penguin_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Penguin
+                </a>
+                <div class="sgn-collapsable collapse" id="penguin_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Both arms straight, next to torso, with fingers straight, palms as right angles to body (fingers pointing left and right). Wiggle side to side (like a penguin waddling).</div>
+                        <div><span class="sgn-highlight">Alex:</span> Wiggles body from side to side from hips (like a penguin waddling).</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="phew" href="#phew_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Phew
+                </a>
+                <div class="sgn-collapsable collapse" id="phew_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Alex:</span> Wipes back of left hand across eyebrows.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="phone" href="#phone_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Phone
+                </a>
+                <div class="sgn-collapsable collapse" id="phone_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#digger-to-dig">Digger (to dig)</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="pig" href="#pig_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Pig
+                </a>
+                <div class="sgn-collapsable collapse" id="pig_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Form right fist. Move in small anti-clockwise circle in front of nose.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Forms left fist and twists from wrist in front of nose, twice.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Sometimes used to mean Fig, Oats and Pegs.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="please" href="#please_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Please
+                </a>
+                <div class="sgn-collapsable collapse" id="please_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <a class="afterglow" href="#please_video"><div class="sgn-video glyphicon glyphicon-film"></div></a>
+                        <video id="please_video" width="360" height="640" data-autoresize="fit">
+                            <source type="video/mp4" src="video/please.m4v"/>
+                        </video>                    
+                        <div><span class="sgn-highlight">Makaton:</span> Move fingertips of open right hand forward from chin. Use both hands for stress. Use directionality.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed. Sometimes starts out as Blow Kiss.</div>
+                        <div><span class="sgn-highlight">Notes:</span> May also mean Thank You</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#blow-kiss">Blow Kiss</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="police-officer" href="#police-officer_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Police Officer
+                </a>
+                <div class="sgn-collapsable collapse" id="police-officer_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index and middle fingers. Trace tips of fingers across back of left wrist.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed using only index finger.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>Q</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="quadbike" href="#quadbike_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Quadbike
+                </a>
+                <div class="sgn-collapsable collapse" id="quadbike_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#motorcycle">Motorcycle</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="quiet" href="#quiet_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Quiet
+                </a>
+                <div class="sgn-collapsable collapse" id="quiet_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index, place in front of mouth and move formation forward.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed, and doesn’t always move formation.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>R</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="raisins" href="#raisins_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Raisins
+                </a>
+                <div class="sgn-collapsable collapse" id="raisins_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place left hand, bent at third knuckle, thumb under, palm back, at chest height. Place right index finger onto ball of right thumb. Move right hand formation in and out of top of left hand formation, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed, sometimes left finger and thumb taps top of right hand instead of going into the formation.</div>
+                        <div><span class="sgn-highlight">Notes:</span> May also appear similar to Cake/Muffin</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#cake">Cake</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="red" href="#red_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Red
+                </a>
+                <div class="sgn-collapsable collapse" id="red_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index finger. Place on chin. Move in a small clockwise circle.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Wipes left fingers down chin</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used when talking about (red) capsicums.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="rubbish" href="#rubbish_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Rubbish
+                </a>
+                <div class="sgn-collapsable collapse" id="rubbish_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Unknown</div>
+                        <div><span class="sgn-highlight">Alex:</span> Holds nose with left hand as though something is smelly.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Sometimes means rubbish truck, though Alex will sign both Rubbish and Truck if encouraged to do so. Often used when talking about Thursday (rubbish truck day), Uncle David, or February (Uncle David’s birthday). May also refer the Conch bath toy.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="rubbish-truck" href="#rubbish-truck_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Rubbish Truck
+                </a>
+                <div class="sgn-collapsable collapse" id="rubbish-truck_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#rubbish">Rubbish</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>S</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="sad" href="#sad_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Sad
+                </a>
+                <div class="sgn-collapsable collapse" id="sad_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place side of index finger of open right hand on chin. Move down chin.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed. Hand is place out from face, not against chin.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="sand" href="#sand_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Sand
+                </a>
+                <div class="sgn-collapsable collapse" id="sand_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Move ball of right thumb across the right hand fingertips, several times.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed with thumb moving up and down fingertips.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="scooter" href="#scooter_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Scooter
+                </a>
+                <div class="sgn-collapsable collapse" id="scooter_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#motorcycle">Motorcycle</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="september" href="#september_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  September
+                </a>
+                <div class="sgn-collapsable collapse" id="september_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#cheese">Cheese</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="seven" href="#seven_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Seven
+                </a>
+                <div class="sgn-collapsable collapse" id="seven_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Hold out right thumb and index finger, blade facing chest.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton, but reversed.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="six" href="#six_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Six
+                </a>
+                <div class="sgn-collapsable collapse" id="six_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Hold out right thumb, blade facing chest.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton, but reversed.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="slow" href="#slow_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Slow
+                </a>
+                <div class="sgn-collapsable collapse" id="slow_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index finger, blade down. Place formation on left wrist. Move up to mid-forearm.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed. Not always accurate about finger placement.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Could be confused with Green.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#green">Green</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="star" href="#star_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Star
+                </a>
+                <div class="sgn-collapsable collapse" id="star_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place right fingernails onto ball of right thumb. Place formation slightly above right side of head, palm up/forward. Flick hand open, several times.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Milk.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#milk">Milk</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="stop" href="#stop_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Stop
+                </a>
+                <div class="sgn-collapsable collapse" id="stop_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Move open right hand, palm forward, forward with stress.</div>
+                        <div><span class="sgn-highlight">Alex:</span> May use two hands, though usually just uses left hand. Forward action not very pronounced.</div>
+                        <div><span class="sgn-highlight">Notes:</span> May appear similar to Five.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#five">Five</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="sunday" href="#sunday_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Sunday
+                </a>
+                <div class="sgn-collapsable collapse" id="sunday_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Tap open hands with fingers together, blades down, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Very similar to Little, hands slightly angled apart at wrists.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Similar to Alex’s version of Clap, Happy, and Little.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#clap">Clap</a>,
+                            <a href="#happy">Happy</a>,
+                            <a href="#little">Little</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>T</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="thank-you" href="#thank-you_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Thank you
+                </a>
+                <div class="sgn-collapsable collapse" id="thank-you_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#please">Please</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="thirsty" href="#thirsty_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Thirsty
+                </a>
+                <div class="sgn-collapsable collapse" id="thirsty_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place right handed “C” on throat under chin. Move down slightly forming a fist.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="thomas-the-tank-engine" href="#thomas-the-tank-engine_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Thomas the Tank Engine
+                </a>
+                <div class="sgn-collapsable collapse" id="thomas-the-tank-engine_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#one">One</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="tiger" href="#tiger_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Tiger
+                </a>
+                <div class="sgn-collapsable collapse" id="tiger_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#lion">Lion</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="time" href="#time_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Time
+                </a>
+                <div class="sgn-collapsable collapse" id="time_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index finger. Point to back of left wrist.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="tired" href="#tired_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Tired
+                </a>
+                <div class="sgn-collapsable collapse" id="tired_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Alex:</span> Covers open mouth with left hand (like covering a yawn).</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used if Alex notices someone yawning.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-brush-teeth" href="#to-brush-teeth_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To brush teeth
+                </a>
+                <div class="sgn-collapsable collapse" id="to-brush-teeth_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Says:</span> Ahhh</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-build" href="#to-build_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To build
+                </a>
+                <div class="sgn-collapsable collapse" id="to-build_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Open both hands, palms down, blades forward. Place right hand on back of left then left hand on back of right hand. End with right hand on left again.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton but reversed and doesn’t always remember to move hands on top of one another.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-clap" href="#to-clap_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To clap
+                </a>
+                <div class="sgn-collapsable collapse" id="to-clap_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Alex:</span> Claps hands together.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Similar to Alex’s version of Happy, Little, and Sunday.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#happy">Happy</a>,
+                            <a href="#little">Little</a>,
+                            <a href="#sunday">Sunday</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-draw" href="#to-draw_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To draw
+                </a>
+                <div class="sgn-collapsable collapse" id="to-draw_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Place right index fingertip onto ball of right thumb. Move formation from left to right in front of chest, as if writing.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used to mean Colouring.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#colouring">Colouring</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-drink" href="#to-drink_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To drink
+                </a>
+                <div class="sgn-collapsable collapse" id="to-drink_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <a class="afterglow" href="#to-drink_video"><div class="sgn-video glyphicon glyphicon-film"></div></a>
+                        <video id="to-drink_video" width="360" height="640" data-autoresize="fit">
+                            <source type="video/mp4" src="video/to-drink.m4v"/>
+                        </video>                    
+                        <div><span class="sgn-highlight">Makaton:</span> Form right handed “C”, palm left, blade down. Tilt up and forward as if drinking.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed, with hand rotated away from and toward body.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Looks the same as Tomato.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#tomato">Tomato</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-eat" href="#to-eat_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To eat
+                </a>
+                <div class="sgn-collapsable collapse" id="to-eat_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Place tips of right fingers onto ball of right thumb. Tap formation on chin, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used to mean “I want food” or “Look, there is some food”. Doesn’t always mean that he wants food.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-fall" href="#to-fall_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To fall
+                </a>
+                <div class="sgn-collapsable collapse" id="to-fall_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place tips of extended right index and middle fingers, slightly apart, on open left palm. Move right formation off left palm to the right and down, ending with fingers pointing up.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed. Doesn&#x27;t move formation.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-finish" href="#to-finish_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To finish
+                </a>
+                <div class="sgn-collapsable collapse" id="to-finish_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Form right fist with thumb extended, palm left. Rock formation sideways from wrist, several times.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Extends left index finger near body and shakes it from side to side, twice.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-go" href="#to-go_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To go
+                </a>
+                <div class="sgn-collapsable collapse" id="to-go_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place open right hand, palm back, blade down at chest. Move forward to palm forward. Use directionality.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-make-to-do" href="#to-make-to-do_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To make (to do)
+                </a>
+                <div class="sgn-collapsable collapse" id="to-make-to-do_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Form right fist. Move formation in small circles over left fist hitting twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton but reversed and fist moves up and down.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-play" href="#to-play_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To play
+                </a>
+                <div class="sgn-collapsable collapse" id="to-play_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Move open hands, palms up, simultaneously in outward circles.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton but only uses left hand and moves in upwards circles.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-shower" href="#to-shower_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To shower
+                </a>
+                <div class="sgn-collapsable collapse" id="to-shower_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Bounce slightly cupped right hand above head, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton, but reversed and hand is to the side of the head, not above.</div>
+                        <div><span class="sgn-highlight">Notes:</span> May appear similar to Bear</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#bear">Bear</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-sleep" href="#to-sleep_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To sleep
+                </a>
+                <div class="sgn-collapsable collapse" id="to-sleep_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Place open right hand on side of head. Close eyes. Tilt head slightly.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed. Head not always tilted.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used to mean bed, tired, or sometimes Honey Bear (his cuddly).</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-think" href="#to-think_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To think
+                </a>
+                <div class="sgn-collapsable collapse" id="to-think_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index finger. Place fingertip on right side of forehead.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed. Sometimes points to temple or top of head.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-want" href="#to-want_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To want
+                </a>
+                <div class="sgn-collapsable collapse" id="to-want_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Move heel of open right hand down chest, turning palm down.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed, sometimes hand wipes down throat instead of chest.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used with other signs when Alex is asking for something nicely, e.g. “I want banana please”.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-wash-bathe" href="#to-wash-bathe_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To wash (bathe)
+                </a>
+                <div class="sgn-collapsable collapse" id="to-wash-bathe_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Mime washing appropriate part of the body.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Open left hand palm down, moves up and down (as though splashing).</div>
+                        <div><span class="sgn-highlight">Notes:</span> Also used by Alex for Swimming, Swimming Pool, Granny, and often used when talking about March (Granny’s birthday).</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="to-wash-hands" href="#to-wash-hands_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  To wash hands
+                </a>
+                <div class="sgn-collapsable collapse" id="to-wash-hands_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> See To wash (bathe)</div>
+                        <div><span class="sgn-highlight">Alex:</span> Left and right palms facing each other, brushing against each other as though washing hands.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="tomato" href="#tomato_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Tomato
+                </a>
+                <div class="sgn-collapsable collapse" id="tomato_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place cupped right hand, palm forward, at right side of face. Move formation to palm back, over nose.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton but reversed, not always over nose.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Looks the same as “To drink”.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#to-drink">To drink</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="train" href="#train_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Train
+                </a>
+                <div class="sgn-collapsable collapse" id="train_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend index and middle fingers of both hands, blades down. Place left hand slightly in front of right. Move formation forward in small circles.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Extends left index finger, blade down. Moves arm back and forth.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often used when talking about Henry, or March (Henry’s birthday).</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="truck" href="#truck_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Truck
+                </a>
+                <div class="sgn-collapsable collapse" id="truck_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Same as Bus</div>
+                        <div><span class="sgn-highlight">Alex:</span> Left handed fist moves downward from head to shoulder (as though pulling an air-horn)</div>
+                        <div><span class="sgn-highlight">Notes:</span> Covers all sorts of trucks, though some trucks have a specific sign.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#concrete-mixer">Concrete Mixer</a>,
+                            <a href="#rubbish-truck">Rubbish Truck</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="tv" href="#tv_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  TV
+                </a>
+                <div class="sgn-collapsable collapse" id="tv_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#digger-to-dig">Digger (to dig)</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="two" href="#two_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Two
+                </a>
+                <div class="sgn-collapsable collapse" id="two_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Right index and middle fingers extended, palm out in front of body.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed, extended fingers may be held tightly together.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>U</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="uncle-david" href="#uncle-david_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Uncle David
+                </a>
+                <div class="sgn-collapsable collapse" id="uncle-david_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> n/a</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Rubbish</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#rubbish">Rubbish</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="up" href="#up_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Up
+                </a>
+                <div class="sgn-collapsable collapse" id="up_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Hold open right hand, palm up. Move upwards.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                        <div><span class="sgn-highlight">Says:</span> Aahpp</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>V</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="video" href="#video_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Video
+                </a>
+                <div class="sgn-collapsable collapse" id="video_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#digger-to-dig">Digger (to dig)</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>W</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="want" href="#want_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Want
+                </a>
+                <div class="sgn-collapsable collapse" id="want_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Move heel of open right hand down chest, turning palm down.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed. Often uses More sign instead.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="where" href="#where_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Where
+                </a>
+                <div class="sgn-collapsable collapse" id="where_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Open both hands and simultaneously move each hand from side to side, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed and performed only with the left hand.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="white" href="#white_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  White
+                </a>
+                <div class="sgn-collapsable collapse" id="white_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place right index finger onto ball of right thumb, other fingers extended and slightly spread. Place formation on right side of neck and rock, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton but reversed with left hand placed on right side of neck.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Often signs “yellow” instead, though he does understand the difference between white and yellow.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#yellow">Yellow</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="woman" href="#woman_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Woman
+                </a>
+                <div class="sgn-collapsable collapse" id="woman_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#mum">Mum</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="work" href="#work_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Work
+                </a>
+                <div class="sgn-collapsable collapse" id="work_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Open both hands, blades down. Tap blade of open right hand on index finger of left hand on index finger of left hand, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed. Sometimes right hand is palm down.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="work" href="#work_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Work
+                </a>
+                <div class="sgn-collapsable collapse" id="work_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Open both hands, blades down. Tap blade of open right hand on index finger of left hand, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed. Right hand is often palm down instead of blade down.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>X</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="x" href="#x_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  X
+                </a>
+                <div class="sgn-collapsable collapse" id="x_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Cross index fingers to form “x”.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Will sign “x” when he sees a word with an “x” in it.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>Y</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="yellow" href="#yellow_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Yellow
+                </a>
+                <div class="sgn-collapsable collapse" id="yellow_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Place right index finger onto ball of right thumb, other fingers extended and slightly spread. Place formation on right temple and rock, twice.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed and index finger and thumb hold onto top of left ear.</div>
+                        <div><span class="sgn-highlight">Notes:</span> May appear similar to White</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#white">White</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="you" href="#you_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  You
+                </a>
+                <div class="sgn-collapsable collapse" id="you_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Extend right index finger. Point forward to toward person concerned. Use directionality.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="yours" href="#yours_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Yours
+                </a>
+                <div class="sgn-collapsable collapse" id="yours_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Form right fist, palm forward. Move formation forward. Use directionality.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Same as Makaton version but reversed.</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="yummy" href="#yummy_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Yummy
+                </a>
+                <div class="sgn-collapsable collapse" id="yummy_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">Makaton:</span> Place open right hand on stomach. Move in anti-clockwise circles, multiple times.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version but reversed.</div>
+                        <div><span class="sgn-highlight">Notes:</span> Appears similar to “Hungry”.</div>
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#hungry">Hungry</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+        <h3>Z</h3>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="zero" href="#zero_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Zero
+                </a>
+                <div class="sgn-collapsable collapse" id="zero_collapsible">
+                  <div class="well">
+                        <div class="sgn-common glyphicon glyphicon-asterisk"></div>
+                        <div><span class="sgn-highlight">Makaton:</span> Form “O” with right hand fingers.</div>
+                        <div><span class="sgn-highlight">Alex:</span> Similar to Makaton version reversed with fingers straight (so it looks more like a closed “bird” sign)</div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a class="sgn-word" role="button" data-toggle="collapse" id="zoe" href="#zoe_collapsible" aria-expanded="false" aria-controls="collapseExample">
+                  Zoe
+                </a>
+                <div class="sgn-collapsable collapse" id="zoe_collapsible">
+                  <div class="well">
+                        <div><span class="sgn-highlight">See also:</span> 
+                            <a href="#cheese">Cheese</a>
+                        </div>
+                    <br style="clear: both"/>
+                  </div>
+                </div>
+            </div>
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/afterglow/latest/afterglow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="signs.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>
