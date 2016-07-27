@@ -8,7 +8,7 @@
     $.getJSON('signs.json', signsData => {
 
         filter$.on('input', () => {
-            const val = filter$.val();
+            const val = (filter$.val() || '').toLowerCase();
 
             if (!val) {
                 $('.hidden').removeClass('hidden');

@@ -12,7 +12,7 @@
     $.getJSON('signs.json', function (signsData) {
 
         filter$.on('input', function () {
-            var val = filter$.val();
+            var val = (filter$.val() || '').toLowerCase();
 
             if (!val) {
                 $('.hidden').removeClass('hidden');
