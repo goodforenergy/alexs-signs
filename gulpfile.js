@@ -139,12 +139,16 @@ gulp.task('handlebars', function() {
                 return a.word.toLowerCase().localeCompare(b.word.toLowerCase());
             });
 
+            // Save data so we can use it in the JavaScript to search through
+            fs.writeFileSync(__dirname + '/build/signs.json', JSON.stringify(data, null, 4));
+
             return data.reduce((acc, sign) => {
                 const letter = sign.word.substr(0, 1);
                 acc[letter] = acc[letter] || [];
                 acc[letter].push(sign);
                 return acc;
             }, {});
+
         }))
         .pipe(gulpHandlebars())
         .pipe(gulp.dest('tmp'));

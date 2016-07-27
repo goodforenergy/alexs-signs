@@ -13,7 +13,7 @@ $linkColour: #18bc9c;
 	color: $linkColour;
 
 	&:hover {
-		text-shadow: 0 0 2px #696969; 
+		text-shadow: 0 0 2px #696969;
 		color: lighten($linkColour, 10%);
 	}
 }
@@ -39,4 +39,23 @@ $linkColour: #18bc9c;
 
 video {
 	display: none;
+}
+
+.sgn-filter-wrapper {
+    position: relative;
+    margin-top: 30px;
+
+	.glyphicon {
+		font-size: 16px;
+		position: absolute;
+		padding: 11px;
+		pointer-events: none;
+		right: 0px;
+	}
+
+	input {
+		padding-left: 11px;
+		height: 38px;
+		line-height: 38px;
+	}
 }
