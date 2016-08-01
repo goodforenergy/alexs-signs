@@ -30,8 +30,8 @@
     },
     {
         "word": "Bag",
-        "makaton": "",
-        "alex": "Forms fist with left hand, palm facing left side of body, moves up and down.",
+        "makaton": "Form fist with right hand, palm left. Place at waist height, right side. Move formation up and down slighty, twice.",
+        "alex": "Similar to Makaton but reversed.",
         "notes": "Often accompanies Food (as in My Food Bag).",
         "see": [""],
         "common": false,
@@ -249,6 +249,14 @@
         "common": true
     },
     {
+        "word": "Day",
+        "makaton": "Place open right hand, palm back, at left side of waist. Move in large arc to right shoulder.",
+        "alex": "Similar to Makaton but reversed, may start at middle of waist.",
+        "notes": "Can appear after Big",
+        "see": ["Big"],
+        "new": true
+    },
+    {
         "word": "Different",
         "makaton": "Extend index fingers, palms down. Place sides of fingers together. Move apart, turning to palms up.",
         "alex": "Similar to Makaton version but performed only using left hand.",
@@ -419,10 +427,22 @@
         "see": ["Bear","To sleep"]
     },
     {
+        "word": "Hook",
+        "says": "H..k",
+        "new": true
+    },
+    {
         "word": "Hot",
         "makaton": "Place right fingertips on chin. Turn hand quickly to palm down while moving hand forward, stopping with stress.",
         "alex": "Similar to Makaton but reversed with left hand placed in front of face.",
         "notes": ""
+    },
+    {
+        "word": "House",
+        "says": "Houss",
+        "notes": "Open said in conjunction with Key",
+        "see": ["Key"],
+        "new": true
     },
     {
         "word": "Hungry",
@@ -443,6 +463,13 @@
     {
         "word": "January",
         "see": ["Bird"]
+    },
+    {
+        "word": "Key",
+        "says": "Kee",
+        "notes": "Often used after Car or House",
+        "see": ["Car","House"],
+        "new": true
     },
     {
         "word": "Koala",
