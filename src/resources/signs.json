@@ -156,6 +156,8 @@
         "word": "Car",
         "makaton": "Form fists with both hands, palms facing. Move formation as if driving a car.",
         "says": "Ka",
+        "notes": "May be followed by Key",
+        "see": ["Key"],
         "common": true
     },
     {
