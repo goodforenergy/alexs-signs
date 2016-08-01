@@ -47,6 +47,19 @@
         "id": "baby-spinach"
     },
     {
+        "word": "Bag",
+        "makaton": "",
+        "alex": "Forms fist with left hand, palm facing left side of body, moves up and down.",
+        "notes": "Often accompanies Food (as in My Food Bag).",
+        "see": [
+            ""
+        ],
+        "common": false,
+        "new": true,
+        "video": true,
+        "id": "bag"
+    },
+    {
         "word": "Banana",
         "makaton": "Extend left index finger. Place right index finger onto ball of right thumb. Move right formation in downward “peeling” movements from tip of left index finger, twice.",
         "alex": "Same as Monkey.",
@@ -205,6 +218,7 @@
         "see": [
             "Green"
         ],
+        "video": true,
         "id": "cat"
     },
     {
@@ -530,7 +544,8 @@
     },
     {
         "word": "Home",
-        "says": "Oommm",
+        "says": "Hoov",
+        "video": true,
         "id": "home"
     },
     {
@@ -633,6 +648,7 @@
         "makaton": "Both hands are held out, palms down with the fingers apart and hooked, and moved alternately up and forward in small vertical circles, twice.",
         "alex": "Forms claw with left hand, palm facing out, and moves it down and up a little.",
         "notes": "Uses same sign for other big cats, such as Tiger, Cheetah, etc.",
+        "video": true,
         "id": "lion"
     },
     {
@@ -747,6 +763,7 @@
         "says": "Muum",
         "notes": "Also says this for Woman.",
         "common": true,
+        "video": true,
         "id": "mum"
     },
     {
@@ -940,6 +957,7 @@
         "makaton": "Move ball of right thumb across the right hand fingertips, several times.",
         "alex": "Similar to Makaton version but reversed with thumb moving up and down fingertips.",
         "notes": "",
+        "video": true,
         "id": "sand"
     },
     {
@@ -1260,7 +1278,19 @@
         "alex": "Same as Makaton version but reversed.",
         "says": "Aahpp",
         "common": true,
+        "video": true,
         "id": "up"
+    },
+    {
+        "word": "Vest",
+        "alex": "Pinches clothing at chest with left index finger and thumb.",
+        "notes": "Often referring to a high visibility vest worn by construction workers. Often used after Hard Hat.",
+        "see": [
+            "Hard Hat"
+        ],
+        "new": true,
+        "video": true,
+        "id": "vest"
     },
     {
         "word": "Video",

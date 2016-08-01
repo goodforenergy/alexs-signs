@@ -29,6 +29,16 @@
         "see": ["Green"]
     },
     {
+        "word": "Bag",
+        "makaton": "",
+        "alex": "Forms fist with left hand, palm facing left side of body, moves up and down.",
+        "notes": "Often accompanies Food (as in My Food Bag).",
+        "see": [""],
+        "common": false,
+        "new": true,
+        "video": true
+    },
+    {
         "word": "Banana",
         "makaton": "Extend left index finger. Place right index finger onto ball of right thumb. Move right formation in downward “peeling” movements from tip of left index finger, twice.",
         "alex": "Same as Monkey.",
@@ -153,7 +163,8 @@
         "makaton": "Stroke back of open left hand with fingers of open right hand, palm down, twice.",
         "alex": "Similar to Makaton version but reversed. May appear similar to Green.",
         "notes": "",
-        "see": ["Green"]
+        "see": ["Green"],
+        "video": true
     },
     {
         "word": "Cheese",
@@ -397,7 +408,8 @@
     },
     {
         "word": "Home",
-        "says": "Oommm"
+        "says": "Hoov",
+        "video": true
     },
     {
         "word": "Honeybear",
@@ -470,7 +482,8 @@
         "word": "Lion",
         "makaton": "Both hands are held out, palms down with the fingers apart and hooked, and moved alternately up and forward in small vertical circles, twice.",
         "alex": "Forms claw with left hand, palm facing out, and moves it down and up a little.",
-        "notes": "Uses same sign for other big cats, such as Tiger, Cheetah, etc."
+        "notes": "Uses same sign for other big cats, such as Tiger, Cheetah, etc.",
+        "video": true
     },
     {
         "word": "Little",
@@ -547,7 +560,8 @@
         "word": "Mum",
         "says": "Muum",
         "notes": "Also says this for Woman.",
-        "common": true
+        "common": true,
+        "video": true
     },
     {
         "word": "Music",
@@ -695,7 +709,8 @@
         "word": "Sand",
         "makaton": "Move ball of right thumb across the right hand fingertips, several times.",
         "alex": "Similar to Makaton version but reversed with thumb moving up and down fingertips.",
-        "notes": ""
+        "notes": "",
+        "video": true
     },
     {
         "word": "Scooter",
@@ -938,7 +953,16 @@
         "makaton": "Hold open right hand, palm up. Move upwards.",
         "alex": "Same as Makaton version but reversed.",
         "says": "Aahpp",
-        "common": true
+        "common": true,
+        "video": true
+    },
+    {
+        "word": "Vest",
+        "alex": "Pinches clothing at chest with left index finger and thumb.",
+        "notes": "Often referring to a high visibility vest worn by construction workers. Often used after Hard Hat.",
+        "see": ["Hard Hat"],
+        "new": true,
+        "video": true
     },
     {
         "word": "Video",
