@@ -13,11 +13,31 @@ var argv = require('yargs').argv,
     handlebars = require('handlebars'),
     gulpHandlebars = require('gulp-handlebars-html')(handlebars), //default to require('handlebars') if not provided
     data = require('gulp-data'),
-    fs = require('fs'),
-    dest = 'build';
+    fs = require('fs');
+
+const paths = {
+    src: {
+        js: ['src/js/**/*.js'],
+        sass: ['src/sass/**/*.scss'],
+        resources: ['src/resources/**/*'],
+        icons: ['src/img/icon.jpg'],
+        pages: ['src/**/*.html'],
+        handlebars: ['src/hb/list.handlebars']
+    },
+    tmp: {
+        _base: 'tmp',
+        icons: 'tmp/icons.html',
+        list: 'tmp/list.handlebars'
+    },
+    dest: {
+        _base: 'build',
+        icons: 'build/icons',
+        signs: '/build/signs.json'
+    }
+};
 
 gulp.task('clean', function() {
-    del(['build', 'tmp']);
+    del([paths.dest._base, paths.tmp._base]);
 });
 
 gulp.task('build', ['js', 'sass', 'pages', 'resources']);
@@ -25,36 +45,36 @@ gulp.task('build', ['js', 'sass', 'pages', 'resources']);
 gulp.task('rebuild', ['clean', 'build']);
 
 gulp.task('js', function() {
-    return gulp.src(['src/js/**/*.js'])
+    return gulp.src(paths.src.js)
         .pipe(plugins.babel({
             presets: ['es2015']
         }))
         .pipe(plugins.concat('signs.js'))
-        .pipe(gulp.dest(dest));
+        .pipe(gulp.dest(paths.dest._base));
 });
 
 gulp.task('sass', function() {
     const sassFilter = filter(['*', '**/*.scss'], {restore: true});
 
-    return gulp.src(['src/sass/**/*.scss'])
+    return gulp.src(paths.src.sass)
         .pipe(sassFilter)
         .pipe(plugins.sass())
         .pipe(sassFilter.restore)
         .pipe(plugins.concat('signs.css'))
-        .pipe(gulp.dest(dest));
+        .pipe(gulp.dest(paths.dest._base));
 });
 
 gulp.task('resources', function() {
-    return gulp.src(['src/resources/**/*', '!/**/*.json'])
-        .pipe(plugins.changed(dest))
-        .pipe(gulp.dest(dest));
+    return gulp.src([...paths.src.resources, '!/**/*.json'])
+        .pipe(plugins.changed(paths.dest._base))
+        .pipe(gulp.dest(paths.dest._base));
 });
 
 gulp.task('icons', function() {
     let icons =
-        gulp.src("src/img/icon.jpg")
-        .pipe(plugins.changed('tmp'))
-        .pipe(gulp.dest('tmp'))
+        gulp.src(paths.src.icons)
+        .pipe(plugins.changed(paths.tmp._base))
+        .pipe(gulp.dest(paths.tmp._base))
         .pipe(favicons({
             appName: "Alex's Signs",
             appDescription: "",
@@ -78,33 +98,33 @@ gulp.task('icons', function() {
 
     icons
         .pipe(htmlFilter)
-        .pipe(gulp.dest('./tmp'));
+        .pipe(gulp.dest(paths.tmp._base));
 
     return icons
         .pipe(noHtmlFilter)
-        .pipe(gulp.dest('./build/icons'));
+        .pipe(gulp.dest(paths.dest.icons));
 });
 
 gulp.task('pages', ['icons', 'handlebars'], function() {
-    return gulp.src('src/**/*.html')
-        .pipe(plugins.changed(dest))
+    return gulp.src(paths.src.pages)
+        .pipe(plugins.changed(paths.dest._base))
         .pipe(htmlreplace({
-            icons: gulp.src('tmp/icons.html'),
-            list: gulp.src('tmp/list.handlebars')
+            icons: gulp.src(paths.tmp.icons),
+            list: gulp.src(paths.tmp.list)
         }))
-        .pipe(gulp.dest(dest));
+        .pipe(gulp.dest(paths.dest._base));
 
 });
 
 gulp.task('watch', ['build'], function() {
-    gulp.watch(['src/sass/**/*.scss'], ['sass']);
-    gulp.watch('src/resources/**', ['resources']);
-    gulp.watch('src/js/**/*.js', ['js']);
-    gulp.watch('src/**/*.html', ['pages']);
+    gulp.watch(paths.src.sass, ['sass']);
+    gulp.watch(paths.src.resources, ['resources']);
+    gulp.watch(paths.src.js, ['js']);
+    gulp.watch(paths.src.pages, ['pages']);
 });
 
 gulp.task('serve', ['build'], function() {
-    gulp.src('./build')
+    gulp.src(paths.dest._base)
         .pipe(plugins.webserver({
             host: argv.host || 'localhost',
             port: argv.port || '8004',
@@ -128,7 +148,7 @@ gulp.task('handlebars', function() {
 
     });
 
-    return gulp.src('src/hb/list.handlebars')
+    return gulp.src(paths.src.handlebars)
         .pipe(data(function() {
             let data = JSON.parse(fs.readFileSync(dataFile));
             data.forEach(sign => {
@@ -140,7 +160,7 @@ gulp.task('handlebars', function() {
             });
 
             // Save data so we can use it in the JavaScript to search through
-            fs.writeFileSync(__dirname + '/build/signs.json', JSON.stringify(data, null, 4));
+            fs.writeFileSync(__dirname + paths.dest.signs, JSON.stringify(data, null, 4));
 
             return data.reduce((acc, sign) => {
                 const letter = sign.word.substr(0, 1);
@@ -151,5 +171,5 @@ gulp.task('handlebars', function() {
 
         }))
         .pipe(gulpHandlebars())
-        .pipe(gulp.dest('tmp'));
+        .pipe(gulp.dest(paths.tmp._base));
 });
