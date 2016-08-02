@@ -13,7 +13,7 @@
                     {{/if}}
                     {{#if video}}
                         <a class="afterglow" href="#{{idSanitise id}}_video"><div class="sgn-video glyphicon glyphicon-film"></div></a>
-                        <video id="{{idSanitise id}}_video" width="360" height="640" data-autoresize="fit">
+                        <video id="{{idSanitise id}}_video" width="360" height="640" data-autoresize="fit" data-autoclose="true">
                             <source type="video/mp4" src="video/{{idSanitise id}}.m4v"/>
                         </video>
                     {{/if}}
@@ -32,7 +32,7 @@
                     {{#if see}}
                         <div><span class="sgn-highlight">See also:</span>
                         {{#each see}}
-                            <a href="#{{toLowerCase (idSanitise this)}}">{{this}}</a>{{#unless @last}},{{/unless}}
+                            <a href="#{{idSanitise this}}">{{this}}</a>{{#unless @last}},{{/unless}}
                         {{/each}}
                         </div>
                     {{/if}}

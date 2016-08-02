@@ -54,7 +54,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('sass', function() {
-    const sassFilter = filter(['*', '**/*.scss'], {restore: true});
+    const sassFilter = filter(['*', '**/*.scss'], { restore: true });
 
     return gulp.src(paths.src.sass)
         .pipe(sassFilter)
@@ -73,25 +73,25 @@ gulp.task('resources', function() {
 gulp.task('icons', function() {
     let icons =
         gulp.src(paths.src.icons)
-        .pipe(plugins.changed(paths.tmp._base))
-        .pipe(gulp.dest(paths.tmp._base))
-        .pipe(favicons({
-            appName: "Alex's Signs",
-            appDescription: "",
-            developerName: "goodforener.gy",
-            developerURL: "http://goodforener.gy/",
-            background: "#ffffff",
-            path: "icons/",
-            url: "http://signs.azurewebsites.net/",
-            display: "standalone",
-            orientation: "portrait",
-            version: 1.0,
-            logging: false,
-            online: false,
-            html: "icons.html",
-            pipeHTML: true,
-            replace: false
-        }));
+            .pipe(plugins.changed(paths.tmp._base))
+            .pipe(gulp.dest(paths.tmp._base))
+            .pipe(favicons({
+                appName: "Alex's Signs",
+                appDescription: "",
+                developerName: "goodforener.gy",
+                developerURL: "http://goodforener.gy/",
+                background: "#ffffff",
+                path: "icons/",
+                url: "http://signs.azurewebsites.net/",
+                display: "standalone",
+                orientation: "portrait",
+                version: 1.0,
+                logging: false,
+                online: false,
+                html: "icons.html",
+                pipeHTML: true,
+                replace: false
+            }));
 
     const htmlFilter = filter('**/*.html');
     const noHtmlFilter = filter(['*', '!**/*.html']);
@@ -118,7 +118,7 @@ gulp.task('pages', ['icons', 'handlebars'], function() {
 
 gulp.task('watch', ['build'], function() {
     gulp.watch(paths.src.sass, ['sass']);
-    gulp.watch(paths.src.resources, ['resources']);
+    gulp.watch(paths.src.resources, ['resources', 'pages']);
     gulp.watch(paths.src.js, ['js']);
     gulp.watch(paths.src.pages, ['pages']);
 });
@@ -136,23 +136,20 @@ gulp.task('serve', ['build'], function() {
 gulp.task('handlebars', function() {
     const dataFile = 'src/resources/signs.json';
 
-    handlebars.registerHelper('toLowerCase', function(str) {
-        return str.toLowerCase();
-    });
+    const sanitise = word => {
+        if (!word.match(/\w+/g)) {
+            return null;
+        }
+        return word.toLowerCase().match(/\w+/g).join('-');
+    };
 
-    handlebars.registerHelper('idSanitise', function(str) {
-        return str
-            .replace(/^[^A-Za-z0-9]+/, '')       // strip leading invalid characters
-            .replace(/[^A-Za-z0-9]+$/, '')       // strip trailing invalid characters
-            .replace(/[^A-Za-z0-9]+/g, '-');     // replace all blocks of invalid characters with a single hyphen
-
-    });
+    handlebars.registerHelper('idSanitise', sanitise);
 
     return gulp.src(paths.src.handlebars)
         .pipe(data(function() {
             let data = JSON.parse(fs.readFileSync(dataFile));
             data.forEach(sign => {
-                sign.id = sign.word.toLowerCase().match(/\w+/g).join('-');
+                sign.id = sanitise(sign.word);
             });
 
             data.sort((a, b) => {
